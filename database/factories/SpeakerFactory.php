@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class SpeakerFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'name' => $this->faker->name,
+            'work_place' => $this->faker->locale,
+            'avatar' => $this->faker->imageUrl,
+            'submit_id' => 1,
+        ];
+    }
+}

@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>VCCI Cần Thơ - Khởi nghiệp ĐBSCL 2021</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicons -->
+    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+        rel="stylesheet" />
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="lib/text-run/text-run.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css2/style.css" />
+    <link rel="stylesheet" href="css2/style-orange.css" />
+
+    <!-- =======================================================
+			Theme Name: LoganTeam
+			Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+			Author: BootstrapMade.com
+			License: https://bootstrapmade.com/license/
+		======================================================= -->
+</head>
+
+<style type="text/css">
+    .bg {
+        background: url("img/bg-img.jpg");
+        background-size: cover;
+        /* For flexibility */
+    }
+
+    .bg-nk {
+        background: url("img/eds.jpg");
+        background-size: cover;
+        background-position: center;
+        /* For flexibility */
+        /*opacity: 0.7;*/
+    }
+
+    .text-border-red {
+        text-shadow: 2px 0 0 black, -1px 0 0 #fff, 0 1px 0 #fff,
+            0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+            -1px 1px 0 #fff;
+    }
+
+    .text-border-white {
+        color: white;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    /*chương trình hội thảo*/
+    .section .section-title {
+        text-align: center;
+        color: #007b5e;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    #about {
+        background: #007b5e;
+        color: #eee;
+    }
+
+    #about h6.section-title {
+        color: #eee;
+    }
+
+    #about .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #f3f3f3;
+        background-color: transparent;
+        border-color: transparent transparent #f3f3f3;
+        border-bottom: 4px solid !important;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #about .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        color: #eee;
+        font-size: 20px;
+    }
+
+    .img-fluid.img-custom {
+        width: auto;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /*end chương trình hội thảo*/
+</style>
+
+<body>
+    <!--=================Header=================-->
+    <header id="header">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="logo">
+                    <a href="/" class="scrollto"><img src="./img/logo.svg" alt="" class="w-100 img-fluid" /></a>
+                </div>
+                <nav class="main-nav d-none d-lg-block ml-auto">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <!-- <li><a href="#about">Chương trình</a></li> -->
+                        <!-- <li><a href="#team">Giám khảo</a></li> -->
+                        <!-- <li><a href="#why-us">Thể lệ</a></li> -->
+                        <li><a href="index3.html">Triển lãm</a></li>
+                        <!-- <li><a href="#add">Địa điểm</a></li> -->
+                        <li><a href="#testimonials">Dự án</a></li>
+                        <li><a href="#call-to-action">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="top-bar" id="tutorial">
+        <style>
+            .modal {
+                background: rgba(0, 0, 0, 1);
+            }
+
+            .kiot video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            .kiot.kiot-forward-left {
+                top: 67%;
+                left: 0;
+                width: 28%;
+                z-index: 999;
+            }
+
+            .kiot.kiot-forward-left .img-content>div:nth-child(1) {
+                width: 16.5%;
+                top: 20%;
+                left: calc(100% - 16.5%);
+            }
+
+            .kiot.kiot-forward-left .img-content>div:nth-child(2) {
+                width: 9%;
+                top: 37%;
+                left: 64.7%;
+            }
+
+            .kiot.kiot-forward-left .img-content>div:nth-child(3) {
+                width: 26%;
+                top: 63%;
+                left: 4%;
+            }
+
+            .kiot.kiot-forward-left .img-content>div:nth-child(4) {
+                width: 26%;
+                height: 30%;
+                top: 31%;
+                left: 55%;
+            }
+
+            .kiot.kiot-forward-left .person {
+                position: absolute;
+                width: 8%;
+                left: 12%;
+                top: 33%;
+                z-index: 302;
+            }
+
+            .kiot.kiot-left {
+                top: 49%;
+                left: 18%;
+                width: 20%;
+                z-index: 888;
+            }
+
+            .kiot.kiot-left .img-content>div:nth-child(1) {
+                width: 16.5%;
+                top: 20%;
+                left: calc(100% - 16.5%);
+            }
+
+            .kiot.kiot-left .img-content>div:nth-child(2) {
+                width: 9%;
+                top: 38%;
+                left: 64.65%;
+            }
+
+            .kiot.kiot-left .img-content>div:nth-child(3) {
+                width: 26%;
+                top: 63%;
+                left: 4%;
+            }
+
+            .kiot.kiot-left .img-content>div:nth-child(4) {
+                width: 26%;
+                height: 30%;
+                top: 31%;
+                left: 55%;
+            }
+
+            .kiot.kiot-center {
+                top: 49%;
+                left: 50%;
+                width: 20%;
+                transform: translateX(-50%);
+                z-index: 888;
+            }
+
+            .kiot.kiot-center .img-content>div:nth-child(1) {
+                width: 16.5%;
+                top: 20%;
+                left: calc(100% - 16.5%);
+            }
+
+            .kiot.kiot-center .img-content>div:nth-child(2) {
+                width: 9%;
+                top: 36%;
+                left: 64.6%;
+            }
+
+            .kiot.kiot-center .img-content>div:nth-child(3) {
+                width: 26%;
+                top: 63%;
+                left: 4%;
+            }
+
+            .kiot.kiot-center .img-content>div:nth-child(4) {
+                width: 26%;
+                height: 30%;
+                top: 32%;
+                left: 55%;
+            }
+
+            .kiot.kiot-right {
+                top: 49%;
+                left: 62%;
+                width: 20%;
+                z-index: 888;
+            }
+
+            .kiot.kiot-right .img-content>div:nth-child(1) {
+                width: 16.5%;
+                top: 20%;
+                left: calc(100% - 16.5%);
+            }
+
+            .kiot.kiot-right .img-content>div:nth-child(2) {
+                width: 9%;
+                top: 43%;
+                left: 26.4%;
+            }
+
+            .kiot.kiot-right .img-content>div:nth-child(3) {
+                width: 26%;
+                top: 63%;
+                left: 4%;
+            }
+
+            .kiot.kiot-right .img-content>div:nth-child(4) {
+                width: 26%;
+                height: 30%;
+                top: 31%;
+                left: 55%;
+            }
+
+            .kiot.kiot-forward-right {
+                top: 67%;
+                left: 70%;
+                width: 28%;
+                z-index: 999;
+            }
+
+            .kiot.kiot-forward-right .img-content>div:nth-child(1) {
+                width: 16.5%;
+                top: 20%;
+                left: calc(100% - 16.5%);
+            }
+
+            .kiot.kiot-forward-right .img-content>div:nth-child(2) {
+                width: 9%;
+                top: 37%;
+                left: 26.3%;
+            }
+
+            .kiot.kiot-forward-right .img-content>div:nth-child(3) {
+                width: 26%;
+                top: 63%;
+                left: 4%;
+            }
+
+            .kiot.kiot-forward-right .img-content>div:nth-child(4) {
+                width: 26%;
+                height: 29%;
+                top: 33%;
+                left: 55%;
+            }
+
+            .kiot.kiot-forward-right video {
+                height: 90%;
+            }
+
+            .modal .kiot.kiot-forward-left-modal,
+            .modal .kiot.kiot-left-modal,
+            .modal .kiot.kiot-center-modal,
+            .modal .kiot.kiot-right-modal,
+            .modal .kiot.kiot-forward-right-modal {
+                width: 100%;
+                left: 0;
+                margin: 0;
+                transform: none;
+            }
+
+            .kiot.kiot-forward-left .person,
+            .kiot.kiot-left .person,
+            .kiot.kiot-center .person,
+            .kiot.kiot-right .person,
+            .kiot.kiot-forward-right .person {
+                position: absolute;
+                width: 8%;
+                left: 13%;
+                top: 33%;
+                z-index: 302;
+            }
+        </style>
+
+        <img src="./images/exhibition-area1.png" alt="Backdrop" />
+
+        <div class="paginate">
+            <a href="index4.html" class="prev" title="Trở về">
+                <img src="./images/img_previous.gif" alt="" />
+            </a>
+            <span>3/3</span>
+            <a style="visibility: hidden" href="index5.html" class="next" title="Tiếp theo">
+                <img src="./images/img_next.gif" alt="" />
+            </a>
+        </div>
+
+        <!--======= KIOT =======-->
+        <div id="kiot">
+            <!--======= KIOT FORWARD LEFT =======-->
+            <div class="kiot kiot-forward-left">
+                <a href="javascript:void(0)" class="person js-open-kiot-forward-left">
+                    <img src="./images/mc1.png" alt="" />
+                </a>
+
+                <img src="./images/kiot_11.png" class="js-open-kiot-forward-left" />
+
+                <div class="img-content">
+                    <div class="js-open-kiot-forward-left">
+                        <img src="./images/11/standy.png" class="image1" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-forward-left">
+                        <!-- <img src="./images/11/logo.jpg" class="image2" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                    </div>
+                    <div class="js-open-kiot-forward-left">
+                        <div id="carousel-kiot-forward-left" class="carousel slide" data-ride="carousel"
+                            data-interval="1500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/11/1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-forward-left">
+                        <video src="/videos/11.mp4"></video>
+                        <!-- <iframe src="https://www.youtube.com/embed/XBsUPoy1oQ4" frameborder="1"
+                            allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--======= KIOT LEFT =======-->
+            <div class="kiot kiot-left">
+                <a href="javascript:void(0)" class="person js-open-kiot-left">
+                    <img src="./images/mc1.png" />
+                </a>
+
+                <img src="./images/kiot_12.png" class="js-open-kiot-left" />
+
+                <div class="img-content">
+                    <div class="js-open-kiot-left">
+                        <img src="./images/12/standy.png" class="image1" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-left">
+                        <!-- <img src="./images/12/logo.jpg" class="image2" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                    </div>
+                    <div class="js-open-kiot-left">
+                        <div id="carousel-kiot-left" class="carousel slide" data-ride="carousel" data-interval="1500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/12/1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-left">
+                        <video src="/videos/12.mp4"></video>
+                        <!-- <iframe src="https://www.youtube.com/embed/JxKNQetloI8" frameborder="1"
+                            allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--======= KIOT CENTER =======-->
+            <div class="kiot kiot-center">
+                <a href="javascript:void(0)" class="person js-open-kiot-center">
+                    <img src="./images/mc1.png" />
+                </a>
+
+                <img src="./images/kiot_13.png" class="js-open-kiot-center" />
+
+                <div class="img-content">
+                    <div class="js-open-kiot-center">
+                        <img src="./images/13/standy.png" class="image1" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-center">
+                        <!-- <img src="./images/13/logo.jpg" class="image2" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                    </div>
+                    <div class="js-open-kiot-center">
+                        <div id="carousel-kiot-center" class="carousel slide" data-ride="carousel" data-interval="1500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/13/1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-center">
+                        <video src="/videos/13.mp4"></video>
+                        <!-- <iframe src="https://www.youtube.com/embed/4F7M3Ofse4s" frameborder="1"
+                            allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--======= KIOT RIGHT =======-->
+            <div class="kiot kiot-right">
+                <a href="javascript:void(0)" class="person js-open-kiot-right">
+                    <img src="./images/mc1.png" alt="" />
+                </a>
+
+                <img src="./images/kiot_14.png" class="js-open-kiot-right" />
+
+                <div class="img-content">
+                    <div class="js-open-kiot-right">
+                        <img src="./images/14/standy.png" class="image1" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-right">
+                        <!-- <img src="./images/14/logo.jpg" class="image2" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                    </div>
+                    <div class="js-open-kiot-right">
+                        <div id="carousel-kiot-right" class="carousel slide" data-ride="carousel" data-interval="1500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/14/1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-right">
+                        <video src="/videos/14.mp4"></video>
+                        <!-- <iframe src="https://www.youtube.com/embed/v2XY3aqrNr4" frameborder="1"
+                            allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--======= KIOT FORWARD RIGHT =======-->
+            <div class="kiot kiot-forward-right">
+                <a href="javascript:void(0)" class="person js-open-kiot-forward-right">
+                    <img src="./images/mc1.png" alt="" />
+                </a>
+
+                <img src="./images/kiot_15.png" class="js-open-kiot-forward-right" />
+
+                <div class="img-content">
+                    <div class="js-open-kiot-forward-right">
+                        <img src="./images/15/standy.png" class="image1" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-forward-right">
+                        <!-- <img src="./images/15/logo.jpg" class="image2" />
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                    </div>
+                    <div class="js-open-kiot-forward-right">
+                        <div id="carousel-kiot-forward-right" class="carousel slide" data-ride="carousel"
+                            data-interval="1500">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/15/1.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                    </div>
+                    <div class="js-open-kiot-forward-right">
+                        <video src="/videos/15.mp4"></video>
+                        <!-- <iframe src="https://www.youtube.com/embed/2nM-ouujf-Q" frameborder="1"
+                            allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=================Chương trình=================-->
+    <main id="main">
+        <!--=================Đội ngủ báo cáo viên=================-->
+        <!-- <section id="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="text-uppercase" style="color: #edb512">
+                        VÒNG CHUNG KẾT CUỘC THI KHỞI NGHIỆP ĐBSCL 2021
+                        (25/02/2022)
+                    </h3>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a style="font-size: 19px" class="nav-item nav-link active" id="nav-home-tab"
+                                    data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                                    aria-selected="true"></a>
+                            </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <div class="row text-justify" style="font-size: 20pt">
+                                    <div class="col-md-2">
+                                        <p>12:00 – 12:30</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Đăng ký đại biểu</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>12:30 – 13:00</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            Kiểm tra kỹ thuật, bài trình
+                                            chiếu, Thí sinh làm quen với sân
+                                            khấu và thiết bị
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>13:00 – 13:05</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            Tuyên bố lý do và Giới thiệu đại
+                                            biểu
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <p>13:05 – 13:10</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Phát biểu khai mạc</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>13:10 – 13:20</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            Giới thiệu Triển lãm thực tế ảo
+                                            các dự án tham gia Vòng chung
+                                            kết
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>13:20 – 13:30</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            Ban Giám khảo đọc quy chế chấm
+                                            điểm và quy chế thi vòng chung
+                                            kết
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <p>13:30 – 15:30</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            15 dự án thuyết trình - Trình
+                                            bày: tối đa 05 phút/dự án - Bù
+                                            giờ tối đa: 01 phút/dự án (có
+                                            cài đặt đồng hồ đếm ngược) - BGK
+                                            đặt câu hỏi: 03 phút
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>15:30 – 15:45</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            2 tiết mục văn nghệ Giải lao tại
+                                            chỗ
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>15:45 – 16:00</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Văn nghệ</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>16:00 – 16:10</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Tri ân Ban Giám khảo</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>16:10 – 16:25</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>
+                                            Tham quan các dự án qua triển
+                                            lãm ảo
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>16:25 – 16:30</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Công bố giá trị các giải</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>16:30 – 17:00</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Trao giải cho thí sinh</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>17:00</p>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <p>Kết thúc</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Có chỉnh sửa -->
+
+        <!--=================Team Section Đội ngũ chuyên gia tư vấn=================-->
+        <!-- <section id="team" class="team section-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="mb-5">BAN GIÁM KHẢO</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="member">
+                            <img src="img/1.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Bà Nguyễn Thị Thương Linh</h4>
+                                    <span>PGĐ Phòng Thương mại và Công Nghiệp Việt Nam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="member">
+                            <img src="img/2.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>PGS. TS Lưu Thanh Đức Hải</h4>
+                                    <span>Phó Trưởng khoa - Khoa Kinh tế,
+                                        Trường ĐH Cần Thơ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="member">
+                            <img src="img/3.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>PGS. TS Phan Đình Khôi</h4>
+                                    <span>Trưởng Bộ môn Tài chính ngân hàng -
+                                        Khoa Kinh tế, Trường ĐH Cần Thơ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/4.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Bà Phạm Thị Ngọc Đào</h4>
+                                    <span>Phó Giám đốc - Sở KH-ĐT tỉnh Đồng
+                                        Tháp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/5.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ông Triệu Thanh Tuấn</h4>
+                                    <span>Phó Giám đốc Trung tâm Xúc tiến Đầu tư và Khởi
+                                        nghiệp tỉnh Cà Mau</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/6.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Bà Lương Thị Hương Giang</h4>
+                                    <span>Tổng Giám đốc - Công ty Cp Dược phẩm Domesco</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/7.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ông Nguyễn Việt Đức</h4>
+                                    <span>Tổng Giám đốc ICM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/8.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Bà Đỗ Yến</h4>
+                                    <span>Đại diện Beacon Fund</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/9.jpg" class="img-fluid img-custom" alt="" />
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ông Phan Văn Quang</h4>
+                                    <span>Đại diện Graft Challenge tại Việt Nam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+        <!-- Có chỉnh sửa -->
+
+        <!--=================PHIÊN HỘI THẢO=================-->
+        <!-- <section id="why-us" class="wow fadeIn">
+            <div class="container-fluid">
+                <header class="section-header">
+                    <h3 class="text-uppercase pb-3">
+                        Thể lệ cuộc thi khởi nghiệp ĐBSCL 2021
+                    </h3>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="why-us-img">
+                            <img src="img/hopmaxt banner-04.png" alt="" class="img-fluid" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="why-us-content text-justify">
+                                    <div class="features wow bounceInUp clearfix text-justify">
+                                        <i class="fa fa-object-group" style="color: #ffb774"></i>
+                                        <h4>
+                                            Đối tượng và thành phần
+                                        </h4>
+                                        <p>
+                                            Các ý tưởng/dự án khởi nghiệp đã và đang triển khai thực tế, không giới hạn
+                                            độ tuổi, không phân biệt giới tính, trình độ, nghề nghiệp, hiện đang sinh
+                                            sống, làm việc hoặc có hộ khẩu tại ĐBSCL; Cá nhân/nhóm (mỗi nhóm tối đa 5
+                                            thành viên) không giới hạn số lượng dự
+                                            án/ý tưởng khi đăng ký tham gia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="why-us-content text-justify">
+                                    <div class="features wow bounceInUp clearfix text-justify">
+                                        <i class="fa fa-object-ungroup" style="color: #ffb774"></i>
+                                        <h4>
+                                            Tiêu chí dự thi
+                                        </h4>
+                                        <p>
+                                            Ý tưởng/dự án phải có tính đổi mới sáng tạo, xuất phát từ ý tưởng, mong
+                                            muốn khởi nghiệp của cá nhân/nhóm dự thi; Ý tưởng/dự án có ứng dụng công
+                                            nghệ hoặc tạo ra những giải pháp công nghệ
+                                            cho cộng đồng, góp phần phát triển kinh tế, xã hội; Ý tưởng/dự án góp phần
+                                            bảo vệ, bảo tồn, gia tăng giá trị cho tài nguyên
+                                            bản địa, văn hóa bản địa của địa phương, vùng miền...<span><a
+                                                    href="https://mekongstartup.vn/bai-viet/378/the-le-cuoc-thi-khoi-nghiep-dbscl-2021"
+                                                    target="_blank">xem
+                                                    thêm>></a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Có chỉnh sửa -->
+
+        <!-- <section id="add" class="clearfix" style="height: 500px">
+            <div class="bg-nk d-flex h-100">
+                <div class="container">
+                    <div class="row justify-content-center align-self-center"
+                        style="position: relative; top: 50%; transform: translateY(-50%);">
+                        <div class="order-md-first order-last text-center">
+                            <h2 class="text-light pt-5 text-border-red" style="
+                                            font-size: 30pt;
+                                            font-weight: bold;
+                                        ">
+                                ĐỊA ĐIỂM
+                            </h2>
+                            <h3 class="text-light pt-5 text-border-white">
+                                Hội trường Orchid - Khách sạn TTC Cần Thơ
+                            </h3>
+                            <h4 class="text-light font-italic text-border-white">
+                                Địa chỉ: Số 2, đường Hai Bà Trưng, P.Tân An,
+                                quận Ninh Kiều, thành phố Cần Thơ
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Có chỉnh sửa -->
+
+        <!--=================Phát biểu tham luận - Ngày 19/9/2019=================-->
+        <section id="testimonials" class="">
+            <div class="container">
+                <header class="section-header">
+                    <h3>DANH SÁCH DỰ ÁN</h3>
+                    <h5 class="font-italic" style="text-align: center">
+                        Vòng chung kết cuộc thi khởi nghiệp ĐBSCL 2021
+                    </h5>
+                </header>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="owl-carousel testimonials-carousel wow fadeInUp">
+                            <div class="testimonial-item">
+                                <img src="images/1/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Mắm chao cá Mè Vinh</h3>
+                                    <h4>Trưởng nhóm dự án: Trần Thị Kim Ngân</h4>
+                                    <p class="text-justify">Mắm chao Cá Mè Vinh là đặc sản đặc thù có bề dày văn hóa ẩm
+                                        thực
+                                        tại Tân Châu, An Giang.
+                                        Điều quan trọng ở đây là trong công thức làm mắm có thành phần "cơm rượu" được
+                                        cho
+                                        vào khi cá đã thấm muối nên thịt cá vừa bùi vừa đậm đà hương vị đặc trưng. Lúc
+                                        bấy
+                                        giờ, người dân quê tôi luôn gọi là "mắm chao". Cá mè vinh khi được làm mắm chao,
+                                        sẽ cho ra một món ăn có hương vị hoàn hảo, với thịt cá vừa ngọt, vừa thơm, béo,
+                                        xương hom cá mềm rịu khi chưng lên, cùng với nước sốt như màu mật ong thơm phức.
+                                        Chúng tôi quyết định sản xuất và xây dựng hình ảnh sản phẩm quê hương độc đáo
+                                        hơn,
+                                        phát triển hơn. Và tên gọi "Mắm chao Cá Mè Vinh Ông Ba Lộc" cũng vì lẽ đó mà
+                                        được
+                                        đặt nên.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/2/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Me Chua Tách Vỏ Ori</h3>
+                                    <h4>Trưởng nhóm dự án: Chau Si Tha</h4>
+                                    <p class="text-justify">Me chua tách vỏ Ori: Ori ở đây là chữ viết tắt của từ
+                                        Original
+                                        có nghĩa là bản gốc, chính bản, độc đáo. Chúng tôi muốn gửi đến quý khách hàng
+                                        thông
+                                        điệp quay vê giá trị ban đầu, quý khách hàng mở hộp bao bì sản phẩm Me Chua Tách
+                                        Vỏ
+                                        Ori sẽ cảm nhận được sự hài lòng với hình ảnh quả me còn nguyên quả được xắp xếp
+                                        đều
+                                        nhau, không me hư hỏng, không vụn, không chưa mảnh vỏ me và không chứa râu me.
+                                        Có
+                                        nguồn gốc 100% từ thiên nhiên, không chứa các chất bảo quản, chất tạo màu, tạo
+                                        mùi,
+                                        không chứa nhiễm vi sinh và các chất gây hại; Chứa khoáng chất cần thiết cho cơ
+                                        thể
+                                        như: Đạm, Sắt, Kali và Vitamin B1; Quả me đều nhau, không bị vụn, tỉ lệ cơm
+                                        nhiều;
+                                        Không chứa tạp chất như: Vỏ me, râu me, loại sạch me hư hỏng; Giữ me được nguyên
+                                        quả, độ ẩm ướt thấp; Được kiểm mẫu định kỳ đạt quy chuẩn; Quy trình sản xuất đáp
+                                        ứng
+                                        tiêu chuẩn ATVSTP; Nguồn góc rõ ràng, bao bì đẹp, thân thiện môi trường.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/3/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Sữa Thực Vật</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Hoàng An</h4>
+                                    <p class="text-justify">Ý nghĩa tên Frutti Organic: Ti: Tìm kiếm, Fruit: Trái cây,
+                                        Organic: Tự nhiên <br />
+                                        Sản phẩm: Nông sản Bắp trái, nhằm tạo giá trị cho nông sản Bắp trái cơ sở Futi
+                                        đã
+                                        nghiên cứu thành công sản phẩm sữa Bắp đóng chai được chiết xuất 85% từ Bắp
+                                        không
+                                        biến đổi gen đạt chuẩn ATVSTP và CBCLSP được phép lưu hành <br />
+                                        Theo các chuyên gia ủng hộ sử dụng ngũ cốc trong bữa ăn, sử dụng Bắp ở dạng
+                                        nguyên
+                                        hạt là lựa chọn thích hợp nhất. Vì sữa Bắp chứa đầy đủ các thành phần dinh dưỡng
+                                        có
+                                        lợi cho sức khỏe. Bạn không nên bỏ qua những lợi ích của sữa Bắp. Nếu bạn đang
+                                        muốn
+                                        thưởng thức những sản phẩm AN TOÀN - BỔ DƯỠNG - NGON LÀNH từ sữa hãy nhớ đến
+                                        FUTI,
+                                        sản phẩm luôn muốn mang đến giải pháp dinh dưỡng tốt nhất cho bạn và gia đình.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/4/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>SWIO - 4S10 - Mobility as a Service - Giải pháp mua vé trực tuyến</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Thế Hoàng</h4>
+                                    <p class="text-justify">Sứ mệnh của chúng tôi là cung cấp giải pháp công nghệ, giúp
+                                        kết
+                                        nối hàng triệu hành khách với dịch vụ du lịch và vận tải, từ đó góp phần giải
+                                        quyết
+                                        bài toán vé của các nhà cung cấp dịch vụ du lịch (vé tàu xe, vé máy bay, nhà
+                                        hàng,
+                                        khách sạn, các cơ sở lưu trú tại địa điểm du lịch, các tour du lịch ...) và cũng
+                                        góp
+                                        phần nâng cao trải nghiệm của khách hàng khi di chuyển tại Việt Nam, góp phần
+                                        vào sự
+                                        phát triển dự án thành phố thông minh của Việt Nam trong tương lai bằng: Ứng
+                                        dụng
+                                        công nghệ: thanh toán dễ dàng, nhanh chóng, website/app giao diện đẹp, dễ thao
+                                        tác;
+                                        Giá cả hợp lý, cạnh tranh cho dịch vụ trọn gói; Tiết kiệm, tích trữ điểm thưởng
+                                        quy
+                                        đổi; Tích hợp hướng dẫn chỉ đường bằng công nghệ AI real-time; Tích hợp tất cả
+                                        các
+                                        phương tiện di chuyển trong 1 lần đặt vé; Combo trọn gói: ngoài các tuyến đường
+                                        chính, sẽ có liên kết với dịch vụ xe công nghệ như một hình thức trung chuyển
+                                        khách
+                                        về tận nơi, các điểm lẻ; Mạng lưới rộng khắp cả nước;
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/5/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Cá mào gà Cà Mau - Đậm đà hương vị biển</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Minh Thái</h4>
+                                    <p class="text-justify">Người dân làng cá Hố Gùi (ấp Mai Hoa, xã Nguyễn Huân) chủ
+                                        yếu
+                                        sinh sống bằng nghề khai thác biển, hằng năm sản lượng khai thác thủy sản dồi
+                                        dào,
+                                        có nhiều loại thủy sản khác nhau trong đó có cá mào gà (người dân vẫn quen gọi
+                                        là cá
+                                        mồng gà) là một trong những loài thủy sản khai thác được nhiều nhất, tuy nhiên
+                                        do
+                                        giá thành rất rẻ nên người dân nơi đây chủ yếu bán cho thương lái để làm thức ăn
+                                        chăn nuôi, phần còn lại người dân làm mắm để dùng trong gia đình và tặng bà con,
+                                        bạn
+                                        bè nơi xa, từ đó nghề sản xuất mắm cá mào gà dần dần trở thành nghề truyền thống
+                                        của
+                                        địa phương, nhưng hiện nay chủ yếu sản xuất nhỏ lẻ ở quy mô hộ gia đình, sản
+                                        phẩm
+                                        làm ra chủ yếu phục vụ nhu cầu trong gia đình hoặc bán tại địa phương. Vì vậy,
+                                        sản
+                                        phẩm mắm cá mào gà hiện nay có giá trị tương đối thấp và chưa được nhiều người
+                                        biết
+                                        đến. Vào cuối năm 2020, chúng tôi đã lên ý tưởng phải thành lập một Hợp tác xã
+                                        (HTX)
+                                        chuyên về sản xuất mắm cá mào gà để bảo tồn và phát huy nghề xuất “Mắm cá mào
+                                        gà”
+                                        truyền thống của địa phương, tạo thêm việc làm, nâng cao thu nhập cho người dân
+                                        địa
+                                        phương, góp phần phát triển kinh tế, xã hội của địa phương.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/6/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Đông trùng hạ thảo Cà Mau - Nâng cao sức khỏe Việt</h3>
+                                    <h4>Trưởng nhóm dự án: Võ Thanh Quang</h4>
+                                    <p class="text-justify">Đông trùng hạ thảo CordycepsMilitaris (ĐTHT) là loại nấm
+                                        dược
+                                        liệu quý hiếm, được nhiều tài liệu chứng minh rất tốt cho sức khỏe con người với
+                                        giá
+                                        trị rất cao và khó tiếp cận. Trong khi đó, con người hiện nay đang phải đối mặt
+                                        với
+                                        các yếu tố ô nhiễm môi trường: khí thải công nghiệp, kim loại nặng trong đất,
+                                        không
+                                        khí; các loại lương thực, thực phẩm, hàng hóa thiết yếu có tồn dư hóa chất, chất
+                                        bảo
+                                        quản, thuốc tăng trưởng… dẫn đến bệnh tật ngày một tăng cao nhất là các bệnh ung
+                                        thư, tim mạch, đường huyết, gan, thận và nhiều bệnh hiểm nghèo khác, mà chính
+                                        bản
+                                        thân và gia đình tôi cũng phải đối mặt. Đây chính là lý do cốt lõi, thúc giục
+                                        tôi
+                                        cùng các thành viên nhóm có ý tưởng xây dựng dự án nghiên cứu nhân nuôi và sản
+                                        xuất,
+                                        kinh doanh nấm dược liệu (ĐTHT) bằng nguồn dưỡng chất cơ bản đưa vào nhân nuôi
+                                        bằng
+                                        nguyên liệu tại chỗ. Dựa theo bản chất của ĐTHT trong tự nhiên, từ nhộng ong
+                                        rừng
+                                        tràm, gạo hữu cơ Hoa sữa U Minh tại Cà Mau vừa dễ dàng quản lý, giám sát chất
+                                        lượng,… đáp ứng các yêu cầu về truy xuất nguồn gốc, đồng thời giúp quản lý tốt
+                                        rủi
+                                        ro về đứt gãy chuỗi cung ứng khi thị trường biến động, đại dịch COVID-19 vừa qua
+                                        là
+                                        một minh chứng rõ nét.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/7/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>HALOFAI - Hương vị từ đất mặn</h3>
+                                    <h4>Trưởng nhóm dự án: Lâm Quốc Nhựt</h4>
+                                    <p class="text-justify">HALOFAI là một công ty khởi nghiệp về lĩnh vực nông nghiệp
+                                        mặn
+                                        bền vững thích ứng biến đổi khí hậu có trụ sở tại Cà Mau, chuyên cung cấp giải
+                                        pháp
+                                        canh tác những loài thực vật chịu mặn có thể sử dụng nước mặn và chất thải nuôi
+                                        trồng thủy sản để tưới tiêu, nghiên cứu tạo ra những sản phẩm chế biến từ những
+                                        thực
+                                        vật chịu mặn.Do đó, việc nuôi trồng và phát triển sản phẩm từ các loại cây chịu
+                                        mặn,
+                                        chịu hạn không những khắc phục những thiệt hại về kinh tế cho người nông dân do
+                                        biến
+                                        đổi khí hậu mà còn giải quyết vấn đề ô nhiễm môi trường từ việc xả thải trong
+                                        nuôi
+                                        trồng thủy sản.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/8/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Sản xuất được trà - Khai thác giá trị dược liệu từ nông sản</h3>
+                                    <h4>Trưởng nhóm dự án: Đoàn Thị Hồng Thắm</h4>
+                                    <p class="text-justify">Là một Dược sĩ nhiều năm nghiên cứu về dược liệu, tác giả
+                                        nhận
+                                        thấy giá trị dược liệu từ các loại nông sản bản địa nhưng chưa được khai thác
+                                        đúng
+                                        cách và hiệu quả. Bên cạnh đó Uống Trà là một nét văn hóa rất lâu đời của người
+                                        dân
+                                        Việt Nam. Từ đó hình thành ý tưởng sản xuất sản phẩm một loại thức uống hàng
+                                        ngày,
+                                        mang nét đẹp văn hóa và có ích cho sức khỏe. Tháng 09/2019 Dự án “SẢN XUẤT DƯỢC
+                                        TRÀ
+                                        – KHAI THÁC GIÁ TRỊ DƯỢC LIỆU TỪ NÔNG SẢN” được thành lập. Nghiên cứu sản xuất
+                                        thành
+                                        công và đưa ra thị trường 10 loại Trà hòa tan từ nông sản thảo dược: Trà Gừng
+                                        Mật
+                                        Ong, Trà Gừng Chanh Sả, Trà Diếp Cá, Trà Đinh Lăng, Trà Tía Tô, Trà Sâm Bí Đao,
+                                        Trà
+                                        Hoa Cúc, Trà Lạc Tiên Tâm sen, Trà Cà Gai Leo, Trà Dây Thìa Canh.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/9/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Công ty TNHH Công nghệ sinh học HF</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Phượng Hằng</h4>
+                                    <p>HF tự tin về mô hình của mình không chỉ vì lợi ích kinh tế. HF mang sứ mạng giúp
+                                        người dân trồng cây cảnh ở quê hương miền Tây có một cuộc sống sung túc hơn.
+                                        Thông qua cách mạng hóa giống cây trồng, HF muốn người nông dân được nâng cao
+                                        thu
+                                        nhập chứ không còn là cải thiện thu nhập. Với giống cây trồng cao cấp và ưu việt
+                                        hơn
+                                        cùng thị trường được vươn ra thế giới, người dân sẽ phần nào đỡ lo lắng được mùa
+                                        mất
+                                        giá. Cây trồng giá trị cao cho người nông dân cơ hội tiếp cận nhiều kỹ thuật
+                                        nông
+                                        nghiệp hơn để nâng cao tay nghề, thuốc bảo vệ thực vật cũng có nguồn ngân sách
+                                        để an
+                                        toàn hơn cho con người và môi trường.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/10/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Hệ thống điều khiển và giám sát môi trường tích hợp sóng vô tuyến
+                                    </h3>
+                                    <h4>Trưởng nhóm dự án: Huỳnh Vân Khoa</h4>
+                                    <p class="text-justify">HỆ THỐNG ĐIỀU KHIỂN VÀ GIÁM SÁT MÔI TRƯỜNG TÍCH HỢP SÓNG VÔ
+                                        TUYẾN được ứng dụng thích hợp với phần lớn địa hình ở Tỉnh Đồng Tháp qua việc đã
+                                        triển khai lắp đặt thực tế hơn 1 năm tại nhiều nơi trên địa bàn Tỉnh Đồng Tháp
+                                        với
+                                        kết quả đạt hiệu quả cao và tiết kiệm thời gian với nhiều chức năng đa dạng:
+                                        Quang
+                                        trắc, đo đạc, giám sát môi trường (dinh dưỡng đất/nước, nhiệt độ - độ ẩm
+                                        đất/nước,
+                                        độ pH đất/nước, nguồn điện ...); Phục vụ nông nghiệp và nuôi thuỷ hải sản; Hệ
+                                        thống
+                                        vận hành tốt trong việc ứng dụng cho các trạm truyền thanh hữu tuyến; Điều khiển
+                                        chuyển đổi luân phiên nguồn điện của Điện Lưới và Máy Phát Điện trong việc phòng
+                                        chống chập điện do sét đánh vào mùa mưa (đã lắp thực tế đơn vị trong những năm
+                                        qua),
+                                        ngoài ra việc điều khiển này cần thiết đối trong ngành nuôi thuỷ sản vì lượng
+                                        sinh
+                                        vật cần cung cấp đầy đủ oxy khi mất nguồn điện lưới.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/11/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Nước mắm cá Linh - Dì Mười</h3>
+                                    <h4>Trưởng nhóm dự án: Phan Thị Kim Diệu</h4>
+                                    <p class="text-justify">Trên thị trường xuất hiện rất nhiều nhãn hiệu nước mắm từ
+                                        nhiều
+                                        vùng nổi tiếng khác nhau như: Phú Quốc, Phan Thiết, Khánh Hòa, Hải
+                                        Phòng....nhưng
+                                        vấn đề mà hiện nay đặt ra là vẫn còn nhiều nhãn hiệu nước mắm chưa tuân thủ đúng
+                                        nguyên tắc “An toàn vệ sinh thực phẩm” cho người tiêu dùng và đây là một vấn nạn
+                                        nhứt nhói mà người tiêu dùng rất lo ngại. Chính vì thế mà chúng tôi đã nảy ra ý
+                                        tưởng sản xuất và mở rộng kinh doanh “Nước mắm cá linh Dì Mười”, Thứ nhất vì
+                                        muốn
+                                        lưu giữ phương pháp thủ công truyền thống của gia đình, ông bà trong việc ủ nước
+                                        mắm
+                                        cá linh, thứ hai là muốn truyền bá đặc sản quê nhà, hương vị nước mắm cá linh
+                                        của
+                                        người dân Hồng Ngự nói riêng và quê hương Đồng Tháp nói chung đến mọi miền của
+                                        đất
+                                        nước, thứ ba là sản xuất sản phẩm nước mắm mang lại giá trị dinh dưỡng cho người
+                                        tiêu dùng. Dự án “Nước mắm cá linh Dì Mười” xây dựng hình ảnh đặc sản quê nhà,
+                                        được
+                                        sản xuất theo phương pháp thủ công truyền thống.</p>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/12/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Son Tươi Bơ Cacao Thanh Nguyên</h3>
+                                    <h4>Trưởng nhóm dự án: Đoàn Thị Tuyết Nhung</h4>
+                                    <p class="text-justify">Điểm sáng của sản Phẩm: Son Tươi Thanh Nguyên được làm từ
+                                        Các
+                                        nguyên liệu 100% tự nhiên, không chì, không chất bảo quản, an toàn cho người sử
+                                        dụng
+                                        với nguồn nguyên liệu ổn định và kiểm soát chất lượng đầu vào; Thêm bơ cacao
+                                        giúp
+                                        dưỡng sâu từ bên trong, chống khô nứt môi và không thâm môi, đây cũng xem là một
+                                        bước đi mới trong ngành son hand made; Màu khoáng:chọn màu tự nhiên, nhập từ Mỹ,
+                                        được FDA chứng nhận an toàn; Dòng son đã thành công khi kết hợp 2 yếu tố vừa
+                                        siêu
+                                        dưỡng và bền màu ( 6 – 8 tiếng) ; Với các điểm sáng trên, có thể nói Son Tươi Bơ
+                                        cacao Thanh Nguyên đang là cứu cánh của rất nhiều chị em quan tâm đến dòng son
+                                        an
+                                        toàn. Sản phẩm hội đủ hầu hết các tiêu chí mà quý chị em đang cần cho một nhãn
+                                        hàng
+                                        Son sạch, yên tâm sử dụng lâu dài</p>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/13/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Xây dụng mô hình Sản xuất khổ qua rừng theo hướng VietGap cung cấp nguyên liệu
+                                        chế
+                                        biến dược liệu</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Thị Thúy Kiều</h4>
+                                    <p class="text-justify">Dự án được hình thành từ việc nhóm nhận ra được giá trị của
+                                        cây
+                                        khổ qua rừng. Đây là loại cây có nhiều tính năng phù hợp thị trường hiện nay và
+                                        cây
+                                        mang tính hoang dại khả thi để sản xuất theo quy trình sạch mà vẫn đảm bảo được
+                                        năng
+                                        suất. Không tăng chi phí đầu tư và giá bán phù hợp nên trồng loại cây này có thể
+                                        giải quyết vấn đề cấp thiết đang trăn trở của nông dân mình. Với mục tiêu hướng
+                                        tới
+                                        cộng đồng, cùng chung tay cải thiện môi trường sống nên nhóm đã quyết định đứng
+                                        ra
+                                        liên kết mở rộng diện tích thành vùng sản xuất tập trung. Nội dung chính của dự
+                                        án
+                                        là hình thành vùng trồng và sản xuất khổ qua rừng theo hướng VietGAP dưới sự
+                                        quản lý
+                                        của Hợp Tác Xã (HTX). Qua hoạt động trồng và sơ chế của tập thể ở đây sẽ tạo ra
+                                        02
+                                        nhóm sản phẩm chính là dây lá khô và trái sấy khô. Từ nguyên liệu này sản xuất
+                                        thành
+                                        các thành phẩm nâng cao giá trị khác. Trong đó, viên kẹo ngậm khổ qua rừng là
+                                        sản
+                                        phẩm chủ lực hiện nay. Nhóm cũng đã giúp các thành viên đang trồng khổ qua rừng
+                                        xây
+                                        dựng và sử dụng hiệu quả tem QR code vừa để gắn trách nhiệm cụ thể từng cá nhân
+                                        vừa
+                                        để truy xuất nguồn gốc và giới thiệu về sản phẩm.</p>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/14/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Vi tảo xử lý nước thải thủy sản</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Quốc Vương</h4>
+                                    <p class="text-justify">Sản phẩm là công nghệ xử lý nước thải bằng vi tảo kèm theo
+                                        thiết
+                                        bị nuôi trồng và thu hồi sinh khối vi tảo. Công nghệ xử lý bằng vi tảo có khả
+                                        năng
+                                        xử lý nước thủy sản đạt đến trên 90 % bên cạnh đó nhóm cũng đã phát triển được
+                                        công
+                                        nghệ thu hồi sinh khối đảm bảo tận thu được triệt để sinh khối vi tảo đã sinh
+                                        trưởng
+                                        trong nước thải. Sinh khối vi tảo khi được thu hồi vẫn đảm bảo được chất lượng
+                                        cao
+                                        và có thể được ứng dụng cho nhiều mục đích như : sản xuất biodiesel, viên nén
+                                        năng
+                                        lượng, thức ăn chăn nuôi,…Khả năng mở rộng đối với công nghệ là khả thi và đã
+                                        được
+                                        thực nghiệm ở nhiều dung tích khác nhau trong phòng thí nghiệm. Đối với thiệt bị
+                                        hiện có thì khả năng xử lý đạt 24m3/ ngày với mức tiêu thụ điện năng là 2kWh/m3
+                                        khi
+                                        sử dụng điện cực thu hoạch là nhôm và inox. Thiết bị xử lý nước thải thủy sản
+                                        cho
+                                        nước sau xử lý đạt tiêu chuẩn loại A và đảm bảo xả trực tiếp ra môi trường.</p>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-item">
+                                <img src="images/15/logo1.jpg" style="object-fit: cover;" class="testimonial-img mr-1"
+                                    alt="" />
+                                <div class="testimonial-content">
+                                    <h3>Viloship</h3>
+                                    <h4>Trưởng nhóm dự án: Nguyễn Giang Trung Nghĩa</h4>
+                                    <p class="text-justify">ViloShip sẽ trở thành ứng dụng đáng tin cậy phục vụ cho các
+                                        nhu
+                                        cầu liên quan đến giao nhận hàng hóa dựa trên 2 tiêu chí chính: tốc độ và độ tin
+                                        cậy. Hàng hóa của bạn sẽ được giao nhận trong nội ô với tốc độ nhanh nhất có thể
+                                        và
+                                        ngày càng nhanh hơn. Bạn sẽ hoàn toàn yên tâm về việc đơn hàng được hoàn thành
+                                        một
+                                        cách trọn vẹn khi sử dụng dịch vụ của ViloShip. Đối với người lao động, và đội
+                                        ngũ
+                                        giao hàng (shipper), ViloShip mong muốn đem đến cơ hội việc làm có thu nhập bền
+                                        vững, lâu dài dành cho mọi người. Chúng tôi sẽ xây dựng một tổ chức mà ở đó, mọi
+                                        người có thể xem giao hàng như một nghề nghiệp ổn định như bao nghề khác hiện
+                                        nay.
+                                        Đối với xã hội. ViloShip sẽ từng bước xây dựng hệ sinh thái các dịch vụ giao
+                                        nhận,
+                                        hậu cần, kho vận phục vụ cho hoạt động kinh tế của Đồng Bằng Sông Cửu Long. Góp
+                                        phần
+                                        thúc đẩy kinh tế vùng đồng bằng sông nước ngày càng phát triển. Đối với đội ngũ
+                                        nhà
+                                        đầu tư, ViloShip luôn tư duy và đổi mới không ngừng nhằm đem đến cơ hội đầu tư
+                                        mang
+                                        lại lợi nhuận bền vững, lâu dài từ những hoạt động thực tế có đóng góp cho xã
+                                        hội.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================Call To Action Section Dịch vụ Khách hàng=================-->
+        <section id="call-to-action" class="wow fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-left">
+                        <h3 class="cta-title m-0">
+                            Liên hệ tham gia sự kiện<br />
+                        </h3>
+                        <h4 class="text-light my-2">
+                            Ban thư ký Cuộc thi Khởi nghiệp ĐBSCL 2021 <br>
+                            Phòng Xúc tiến & Khởi nghiệp - VCCI Cần Thơ
+                        </h4>
+                        <p class="cta-text">
+                            Địa chỉ: Số 12 Hòa Bình, P. An Cư, Q. Ninh Kiều, TP Cần Thơ<br />
+                            Điện thoai: 02923824918 (Ext: 121, 123)<br />
+                            Email: mekongstartupnetwork@gmail.com<br />
+                            Website: www.mekongstartup.vn<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="d-sm-none d-md-block d-none d-md-block justify-content-md-center card">
+        <div class="z-depth-2 d-flex justify-content-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.786241792088!2d105.7827887141666!3d10.03449047519417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a062a10ad0cae9%3A0x5865cb6cbcd25738!2zUGjDsm5nIFRoxrDGoW5nIE3huqFpIFbDoCBDw7RuZyBOZ2hp4buHcCBWaeG7h3QgTmFtIENoaSBOaMOhbmggVOG6oWkgQ-G6p24gVGjGoSAoIFZDQ0kgQ-G6p24gVGjGoSAp!5e0!3m2!1svi!2s!4v1645151793216!5m2!1svi!2s"
+                width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        </div>
+        <div class="container text-center b">
+            <div class="credits">Designed by <a href="#">LoganTeam</a></div>
+        </div>
+    </section>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!--======= MODAL KIOT =======-->
+    <div id="modal-kiot">
+        <!--======= MODAL KIOT FORWARD LEFT =======-->
+        <div class="modal" id="kiot-forward-left-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="kiot kiot-forward-left kiot-forward-left-modal">
+                        <span class="close" data-dismiss="modal">&times;</span>
+                        <a href="javascript:void(0)" class="person js-open-kiot-forward-left">
+                            <img src="./images/mc1.png" />
+                        </a>
+
+                        <img src="./images/kiot_11.png" />
+
+                        <div class="img-content">
+                            <div>
+                                <a href="./images/11/standy.png" data-fancybox="gallery-kiot-forward-left">
+                                    <img src="" class="image1" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./images/11/logo.jpg" data-fancybox="gallery-kiot-forward-left">
+                                    <!-- <img src="" class="image2" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                                </a>
+                            </div>
+                            <div class="info-kiot-forward-left">
+                                <div id="carousel-kiot-forward-left-modal" class="carousel slide" data-ride="carousel"
+                                    data-interval="1500">
+                                    <div class="carousel-inner"></div>
+                                </div>
+                                <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                            </div>
+                            <div>
+                                <video height="100" width="100" controls></video>
+                                <!-- <iframe src="" frameborder="1" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL KIOT LEFT =======-->
+        <div class="modal" id="kiot-left-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="kiot kiot-left kiot-left-modal">
+                        <span class="close" data-dismiss="modal">&times;</span>
+                        <a href="javascript:void(0)" class="person js-open-kiot-left">
+                            <img src="./images/mc1.png" />
+                        </a>
+
+                        <img src="./images/kiot_12.png" />
+
+                        <div class="img-content">
+                            <div>
+                                <a href="./images/12/standy.png" data-fancybox="gallery-kiot-left">
+                                    <img src="" class="image1" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./images/12/logo.jpg" data-fancybox="gallery-kiot-left">
+                                    <!-- <img src="" class="image2" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                                </a>
+                            </div>
+                            <div class="info-kiot-left">
+                                <div id="carousel-kiot-left-modal" class="carousel slide" data-ride="carousel"
+                                    data-interval="1500">
+                                    <div class="carousel-inner"></div>
+                                </div>
+                                <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                            </div>
+                            <div>
+                                <video height="100" width="100" controls></video>
+                                <!-- <iframe src="" frameborder="1" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL KIOT CENTER =======-->
+        <div class="modal" id="kiot-center-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="kiot kiot-center kiot-center-modal">
+                        <span class="close" data-dismiss="modal">&times;</span>
+                        <a href="javascript:void(0)" class="person js-open-kiot-center">
+                            <img src="./images/mc1.png" />
+                        </a>
+
+                        <img src="./images/kiot_13.png" />
+
+                        <div class="img-content">
+                            <div>
+                                <a href="./images/13/standy.png" data-fancybox="gallery-kiot-center">
+                                    <img src="" class="image1" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./images/13/logo.jpg" data-fancybox="gallery-kiot-center">
+                                    <!-- <img src="" class="image2" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                                </a>
+                            </div>
+                            <div class="info-kiot-center">
+                                <div id="carousel-kiot-center-modal" class="carousel slide" data-ride="carousel"
+                                    data-interval="1500">
+                                    <div class="carousel-inner"></div>
+                                </div>
+                                <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                            </div>
+                            <div>
+                                <video height="100" width="100" controls></video>
+                                <!-- <iframe src="" frameborder="1" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL KIOT RIGHT =======-->
+        <div class="modal" id="kiot-right-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="kiot kiot-right kiot-right-modal">
+                        <span class="close" data-dismiss="modal">&times;</span>
+                        <a href="javascript:void(0)" class="person js-open-kiot-right">
+                            <img src="./images/mc1.png" />
+                        </a>
+
+                        <img src="./images/kiot_14.png" />
+
+                        <div class="img-content">
+                            <div>
+                                <a href="./images/14/standy.png" data-fancybox="gallery-kiot-right">
+                                    <img src="" class="image1" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./images/14/logo.jpg" data-fancybox="gallery-kiot-right">
+                                    <!-- <img src="" class="image2" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                                </a>
+                            </div>
+                            <div class="info-kiot-right">
+                                <div id="carousel-kiot-right-modal" class="carousel slide" data-ride="carousel"
+                                    data-interval="1500">
+                                    <div class="carousel-inner"></div>
+                                </div>
+                                <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                            </div>
+                            <div>
+                                <video height="100" width="100" controls></video>
+                                <!-- <iframe src="" frameborder="1" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL KIOT FORWARD RIGHT =======-->
+        <div class="modal" id="kiot-forward-right-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="kiot kiot-forward-right kiot-forward-right-modal">
+                        <span class="close" data-dismiss="modal">&times;</span>
+                        <a href="javascript:void(0)" class="person js-open-kiot-forward-right">
+                            <img src="./images/mc1.png" />
+                        </a>
+
+                        <img src="./images/kiot_15.png" />
+
+                        <div class="img-content">
+                            <div>
+                                <a href="./images/15/standy.png" data-fancybox="gallery-kiot-forward-right">
+                                    <img src="" class="image1" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./images/15/logo.jpg" data-fancybox="gallery-kiot-forward-right">
+                                    <!-- <img src="" class="image2" />
+                                    <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" /> -->
+                                </a>
+                            </div>
+                            <div class="info-kiot-forward-right">
+                                <div id="carousel-kiot-forward-right-modal" class="carousel slide" data-ride="carousel"
+                                    data-interval="1500">
+                                    <div class="carousel-inner"></div>
+                                </div>
+                                <img src="./images/hieu-ung-click_FINAL1.gif" class="icon-effect" />
+                            </div>
+                            <div>
+                                <video height="100" width="100" controls></video>
+                                <!-- <iframe src="" frameborder="1" allowfullscreen></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======= MODAL INFO =======-->
+    <div id="modal-info">
+        <style>
+            #modal-info .carousel-inner {
+                height: 80vh;
+                overflow-y: scroll;
+            }
+
+            #modal-info .carousel-inner::-webkit-scrollbar {
+                width: 0;
+            }
+        </style>
+        <!--======= MODAL INFO KIOT FORWARD LEFT =======-->
+        <div class="modal" id="info-kiot-forward-left-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold text-uppercase">
+                            NƯỚC MẮM CÁ LINH DÌ MƯỜI
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-group-3-info-kiot-forward-left" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Thông tin dự án
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/logo.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="modal-product-content">
+                                                <p>Họ và tên người đại diện: Phan Thị Kim Diệu</p>
+                                                <p>Ngày sinh: 15/08/1987</p>
+                                                <p>Địa chỉ: Ấp Bình Hòa, Xã Bình Thạnh, TP.Hồng Ngự, Đồng Tháp</p>
+                                                <p>Điện thoại: 0939 429 899 Email: nuocmamcalinhdimuoi@gmail.com</p>
+                                                <p>Thành viên 1: Nguyễn Minh Phụng, Chức vụ trong nhóm: Trưởng nhóm
+                                                </p>
+                                                <p>Thành viên 2: Phan Thị Kim Diệu, Chức vụ trong nhóm: Thành viên
+                                                </p>
+                                                <p>Đăng ký dự thi dự án khởi nghiệp: CHỦ ĐỀ: Sản xuất nước mắm
+                                                    truyền
+                                                    thống kết hợp với ứng dụng công nghệ, góp phần gia tăng giá trị
+                                                    cho
+                                                    tài nguyên bản địa, nâng cao hình ảnh của địa phương và vai trò
+                                                    của
+                                                    phụ nữ trong phát triển kinh tế hội nhập hiện nay.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Tóm tắt dự án
+                                    </h3>
+                                    <div class="col-md-12">
+                                        <div class="modal-product-image w-50">
+                                            <img src="/images/11/7.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>Những ai từng nếm qua hương vị đậm đà của nước mắm cá linh đều
+                                                    cho
+                                                    rằng: so với những loại nước mắm nổi tiếng khác, nước mắm cá
+                                                    linh
+                                                    không hề thua kém. Bên mâm cơm gia đình, nước mắm cá linh tuy
+                                                    dân dã
+                                                    mà chất chứa tình đất, tình người. Không chỉ được sử dụng trong
+                                                    gia
+                                                    đình, vì ngon mà nước mắm cá linh còn trở thành một thứ quà tặng
+                                                    được nhiều người biết đến.</p>
+                                                <p>Bên cạnh đó nước mắm là một loại nước chấm quen thuộc được ưa
+                                                    chuộng
+                                                    nhất ở nước ta và không thể thiếu trong mỗi buổi cơm hàng ngày.
+                                                    Nước
+                                                    mắm có giá trị dinh dưỡng cao (Trong nước mắm có chứa 13 loại
+                                                    acid
+                                                    amin, vitamin B, khoảng 1 – 5 microgram vitamin B12), hấp dẫn
+                                                    người
+                                                    ăn bưởi hương vị đậm đà, đặc trưng mà không loại sản phẩm bào
+                                                    khác
+                                                    có thể thay thế được.</p>
+                                                <p>Mặt khác trên thị trường xuất hiện rất nhiều nhãn hiệu nước mắm
+                                                    từ
+                                                    nhiều vùng nổi tiếng khác nhau như: Phú Quốc, Phan Thiết, Khánh
+                                                    Hòa,
+                                                    Hải Phòng....nhưng vấn đề mà hiện nay đặt ra là vẫn còn nhiều
+                                                    nhãn
+                                                    hiệu nước mắm chưa tuân thủ đúng nguyên tắc “An toàn vệ sinh
+                                                    thực
+                                                    phẩm” cho người tiêu dùng và đây là một vấn nạn nhứt nhói mà
+                                                    người
+                                                    tiêu dùng rất lo ngại.</p>
+                                                <p>Chính vì thế mà chúng tôi đã nảy ra ý tưởng sản xuất và mở rộng
+                                                    kinh
+                                                    doanh “Nước mắm cá linh Dì Mười”, Thứ nhất vì muốn lưu giữ
+                                                    phương
+                                                    pháp thủ công truyền thống của gia đình, ông bà trong việc ủ
+                                                    nước
+                                                    mắm cá linh, thứ hai là muốn truyền bá đặc sản quê nhà, hương vị
+                                                    nước mắm cá linh của người dân Hồng Ngự nói riêng và quê hương
+                                                    Đồng
+                                                    Tháp nói chung đến mọi miền của đất nước, thứ ba là sản xuất sản
+                                                    phẩm nước mắm mang lại giá trị dinh dưỡng cho người tiêu dùng.
+                                                    Dự án
+                                                    “Nước mắm cá linh Dì Mười” xây dựng hình ảnh đặc sản quê nhà,
+                                                    được
+                                                    sản xuất theo phương pháp thủ công truyền thống.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/3.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/4.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/5.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/6.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/11/8.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-target="#carousel-group-3-info-kiot-forward-left" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-target="#carousel-group-3-info-kiot-forward-left" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL INFO KIOT LEFT =======-->
+        <div class="modal" id="info-kiot-left-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold text-uppercase">
+                            SON TƯƠI BƠ CACAO THANH NGUYÊN (SON TƯƠI THANH NGUYÊN)
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-group-3-info-kiot-left" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Thông tin dự án
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                            <div class="modal-product-image">
+                                                <img src="/images/12/logo.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="modal-product-content">
+                                                <p>Họ và tên người đại diện: Đoàn Thị Tuyết Nhung</p>
+                                                <p>Ngày sinh: 30/11/1982</p>
+                                                <p>Địa chỉ: 56 Hùng Vương, Khóm 3, Phường 1, TP sa Đéc, Đồng Tháp
+                                                </p>
+                                                <p>Điện thoại: 0979 707 807 Email: hoangnhungsadec@gmail.com</p>
+                                                <p>Đăng ký dự thi dự án khởi nghiệp: SON TƯƠI BƠ CACAO THANH NGUYÊN
+                                                    (SON
+                                                    TƯƠI THANH NGUYÊN)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="carousel-item active">
+                                    <div class="col-md-12">
+                                        <div class="modal-product-image w-50">
+                                            <img src="/images/12/3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <h3 class="modal-product-title">
+                                        Tóm tắt dự án
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>Là người con của Vùng đất Đồng bằng sông Cửu Long trù phú, với
+                                                    nhiều
+                                                    sản vật tươi đẹp từ thiên nhiên, cũng là người phụ nữ Việt, tôi
+                                                    yêu
+                                                    vẻ đẹp từ bên trong, đẹp nhưng phải an toàn là trên hết.</p>
+                                                <p>Từ lâu, tôi đã ấp ủ làm cho mình một dòng son sạch để dùng, giúp
+                                                    mình
+                                                    được tươi trẻ, tự tin hơn trong công việc giao tiếp hàng ngày.
+                                                </p>
+                                                <p>Tháng 3 năm 2020, khi đợt dịch Covid lần 1 bùng ra, khi mà công
+                                                    việc
+                                                    cho ngành du lịch tạm ngừng…tôi đã có thời gian bắt tay thực
+                                                    hiện
+                                                    niềm đam mê này</p>
+                                                <p>Qua nhiều tháng kiên trì học hỏi từ chuyên gia, làm đi và làm
+                                                    lại,
+                                                    quyết tâm không bỏ cuộc, đến tháng 11 năm 2020, sản phẩm son
+                                                    Tươi
+                                                    Thanh Nguyên đã ra đời.</p>
+                                                <p>Rất vui vì sản phẩm đầu tay của Nhung được rất nhiều chị em ưa
+                                                    thích
+                                                    vì chất son mềm mịn, dưỡng ẩm và không gây thâm môi. Sản phẩm cứ
+                                                    thế
+                                                    được chị em truyền tay nhau dùng vì Son Thanh Nguyên khá lành
+                                                    tính
+                                                    và mức giá vô cùng hợp lý, ai cũng có thể sở hữu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="modal-product-title">
+                                        Giới thiệu về sản phẩm
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>Thành phần 100% tự nhiên, nguồn nguyên liệu phong phú, dễ tìm, tự
+                                                    chế
+                                                    biến, tự chủ và đảm bảo chất lượng nguồn cung</p>
+                                                <p>Ngoài ra, với Nguồn bơ cacao có sẵn tại xưởng nhà, loại bơ cacao
+                                                    thượng hạng (cty Cacao Mekong) với giá ưu đãi cũng là một lợi
+                                                    thế.
+                                                    Một thành phần không thể thiếu để giúp chất son mềm mịn và không
+                                                    thâm môi.</p>
+                                                <p>Bên cạnh tôi còn có những con người năng động, luôn nhiệt huyết
+                                                    và
+                                                    đầy tinh thần học hỏi, luôn sáng tạo và đổi mới bắt kịp xu thế
+                                                    thị
+                                                    trường. May mắn, tôi còn có một thân hữu là chuyên gia nhiều năm
+                                                    kinh nghiệm trong lĩnh vực Mỹ Phẩm Thiên Nhiên và Son hand made
+                                                    làm
+                                                    cố vấn.</p>
+                                                <p>Và hơn 10 năm điều hành cty Vé Máy Bay & Du Lịch Ánh Dương tại Tp
+                                                    Sa
+                                                    Đéc, giúp tôi quen với việc quản lý, nắm bắt thị trường và có
+                                                    tệp
+                                                    khách hàng thân thiết.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/12/1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/12/2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/12/4.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image">
+                                                <img src="/images/12/5.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-target="#carousel-group-3-info-kiot-left" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-target="#carousel-group-3-info-kiot-left" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL INFO KIOT CENTER =======-->
+        <div class="modal" id="info-kiot-center-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold text-uppercase">
+                            Xây dụng mô hình Sản xuất khổ qua rừng theo hướng VietGap cung cấp nguyên liệu chế biến
+                            dược
+                            liệu
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-group-3-info-kiot-center" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Thông tin dự án
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                            <div class="modal-product-image">
+                                                <img src="/images/13/logo.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="modal-product-content">
+                                                <p>Tên tổ chức, đơn vị: HTX Dược liệu xanh Hậu Giang</p>
+                                                <p>Địa chỉ: ấp 3, xã Vị Tân, thành phố Vị Thanh, Hậu Giang</p>
+                                                <p>Điện thoại: 0939 814 673 Email: thuykieu87@gmail.com</p>
+                                                <p>Danh sách thành viên:<br />
+                                                    <span class="pl-3">- Nguyễn Thị Thúy Kiều</span><br />
+                                                    <span class="pl-3">- Lê Văn Tú</span><br />
+                                                    <span class="pl-3">- Đoàn Thị Tố Nga</span><br />
+                                                    <span class="pl-3">- Nguyễn Trung Thành</span><br />
+                                                    <span class="pl-3">- Nguyễn Lượm Em</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Tóm tắt dự án
+                                    </h3>
+                                    <div class="col-md-12">
+                                        <div class="modal-product-image w-50">
+                                            <img src="/images/13/4.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>Nhóm là một tập thể cùng hoạt động nhịp nhàng theo sự phân công,
+                                                    lập
+                                                    kế hoạch sản xuất cụ thể cho từng thành viên. Về nhóm phụ trách
+                                                    vùng
+                                                    sản xuất: trên cơ sở phân lô riêng từng vườn sẽ bố trí thời gian
+                                                    xuống giống phù hợp để vừa chủ động công lao động cung cấp cho
+                                                    thị
+                                                    trường những sản phẩm có chất lượng đồng đều với số lượng lớn và
+                                                    thường xuyên. Mô hình trồng khổ qua được thực hiện theo một quy
+                                                    trình thống nhất với sự hướng dẫn xuyên suốt của cán bộ kỹ thuật
+                                                    của
+                                                    nhóm từ việc cải tạo đất, nước, chọn giống, trồng, chăm sóc,
+                                                    quản lý
+                                                    sinh vật gây hại… Ngoài việc sản xuất trên đồng ruộng dự án cũng
+                                                    đã
+                                                    thực hiện thêm khâu sơ chế, chế biến và bán sản phẩm. Và tất cả
+                                                    các
+                                                    thông tin đều được cập nhật lên nhật ký điện tử. Dự án còn có
+                                                    thêm
+                                                    khâu quản lý sổ sách, thông tin sản phẩm, kiểm định, phân tích
+                                                    mẫu
+                                                    đất, nước, kiểm duyệt sản phẩm theo quy chuẩn. Hiện tại thì khâu
+                                                    phơi sấy đang được thực hiện quy mô hộ nhỏ với máy sấy điện năng
+                                                    và
+                                                    phơi tự nhiên ngoài trời nhưng năng suất còn thấp, nhiều công
+                                                    lao
+                                                    động và chưa đảm bảo do bụi, vật thể nhỏ có thể rơi lẫn vào sản
+                                                    phẩm. Cần chủ động thực hiện quy mô sấy công nghiệp, tập thể ở
+                                                    đây
+                                                    dự định chọn hình thức nhà sấy năng lượng mặt trời sẽ ít tiêu
+                                                    tốn
+                                                    điện, thân thiện môi trường hơn (tuy cần kết hợp hệ thống điện
+                                                    bên
+                                                    trong nhà sấy để chủ động được trong mùa mưa nhưng sẽ ít tiêu
+                                                    tốn
+                                                    điện năng hơn hình thức sấy bằng tủ điện). Bên cạnh đó là một số
+                                                    hoạt động khác giúp giảm chi phí và tăng chất lượng sản phẩm như
+                                                    sẽ
+                                                    lắp hệ thống tưới tự động điều khiển bằng điện thoại di động để
+                                                    chủ
+                                                    động cung cấp nước và giảm công lao động.</p>
+                                                <p>Vườn khổ qua rừng được canh tác dựa trên biện pháp quản lý cây
+                                                    trồng
+                                                    tổng hợp (ICM) sẽ góp phần bảo vệ thiên địch và giảm ô nhiễm môi
+                                                    trường. Mô hình sản xuất của dự án hạn chế tối đa việc sử dụng
+                                                    hóa
+                                                    chất BVTV và các hoạt động gây ảnh hưởng xấu đến môi trường đất,
+                                                    nước và hệ sinh thái tự nhiên sẽ góp phần ứng phó với biến đổi
+                                                    khí
+                                                    hậu. Bên cạnh đó, việc hạn chế sử dụng hóa chất BVTV giúp bảo vệ
+                                                    sức
+                                                    khỏe của người sản xuất và người tiêu dùng, chất lượng cuộc sống
+                                                    được nâng lên, xã hội giảm được chi phí ý tế và các gánh nặng
+                                                    bảo
+                                                    trợ xã hội.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-50">
+                                                <img src="/images/13/1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-50">
+                                                <img src="/images/13/2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-50">
+                                                <img src="/images/13/3.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-50">
+                                                <img src="/images/13/5.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-50">
+                                                <img src="/images/13/6.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-50">
+                                                <img src="/images/13/7.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-target="#carousel-group-3-info-kiot-center" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-target="#carousel-group-3-info-kiot-center" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL INFO KIOT RIGHT =======-->
+        <div class="modal" id="info-kiot-right-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold text-uppercase">VI TẢO XỬ LÝ NƯỚC THẢI THỦY SẢN</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-group-3-info-kiot-right" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Thông tin dự án
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                            <div class="modal-product-image">
+                                                <img src="/images/14/logo.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="modal-product-content">
+                                                <p>Họ và tên người đại diện: Nguyễn Quốc Vương</p>
+                                                <p>Ngày sinh: 01/02/1999</p>
+                                                <p>Địa chỉ: 865 Tôn Đức Thắng, Liên Chiểu, Đà Nẵng</p>
+                                                <p>Điện thoại: 0338 114 419 Email: vuongvnn71@gmail.com</p>
+                                                <p>Đăng ký dự thi dự án khởi nghiệp: VI TẢO XỬ LÝ NƯỚC THẢI THỦY SẢN
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="carousel-item active">
+                                    <div class="col-md-12">
+                                        <div class="modal-product-image w-50">
+                                            <img src="/images/14/1.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <h3 class="modal-product-title">
+                                        Tóm tắt dự án
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>Việt Nam với nền công nghiệp chế biến thủy hải sản hàng đầu thế
+                                                    giới,
+                                                    hằng ngày phải sử dụng lượng lớn nước để vệ sinh cá, tôm và được
+                                                    thải ra môi trường. Các nước thải đó phải xử lý các công đoạn
+                                                    phức
+                                                    tạp và tốn nhiều chi phí. Từ những khó khăn đó chúng tôi đã phát
+                                                    triền thành công công nghệ xử lý nước thải thủy sản bằng phương
+                                                    pháp
+                                                    nuôi trồng vi tảo.Việc nuôi trồng vi tảo không chỉ giúp xử lý
+                                                    nước
+                                                    thải mà ở đây tảo còn có khả năng hấp thụ lượng lớn CO2 đồng
+                                                    thời
+                                                    tạo ra lượng lớn sinh khối tảo. Sinh khối tảo này đa ứng dụng
+                                                    như có
+                                                    thể tạo ra biodiesel, viên nén năng lương, thức ăn chăn nuôi.
+                                                    Công
+                                                    nghệ đang dần được hoàn thiện và tối ưu, với mô hình kinh doanh
+                                                    kết
+                                                    nối giữa nhóm nghiên cứu, nhà máy và người dân. Từ dự án này
+                                                    giúp
+                                                    cho nhà máy giảm thiểu được chi phí xử lý nước, người dân có
+                                                    thêm
+                                                    thu nhập từ việc nuôi trồng vi tảo từ đó tạo nên lợi ích bền
+                                                    vững
+                                                    phát triển xã hội. Nguồn lợi ích của dự án sẽ đến từ tiền xử lý
+                                                    nước
+                                                    thải, sinh khối tảo và chuyển giao công nghệ. Không chỉ giúp
+                                                    phát
+                                                    triển công ty vận hành dự án mà còn đem lại lợi ích cho xã hội
+                                                    trong
+                                                    việc phát triển kinh tế hộ gia đình và bảo vệ môi trường.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="modal-product-title">
+                                        Giới thiệu về sản phẩm
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>Sản phẩm là công nghệ xử lý nước thải bằng vi tảo kèm theo thiết
+                                                    bị
+                                                    nuôi trồng và thu hồi sinh khối vi tảo. Công nghệ xử lý bằng vi
+                                                    tảo
+                                                    có khả năng xử lý nước thủy sản đạt đến trên 90 % bên cạnh đó
+                                                    nhóm
+                                                    cũng đã phát triển được công nghệ thu hồi sinh khối đảm bảo tận
+                                                    thu
+                                                    được triệt để sinh khối vi tảo đã sinh trưởng trong nước thải.
+                                                    Sinh
+                                                    khối vi tảo khi được thu hồi vẫn đảm bảo được chất lượng cao và
+                                                    có
+                                                    thể được ứng dụng cho nhiều mục đích như : sản xuất biodiesel,
+                                                    viên
+                                                    nén năng lượng, thức ăn chăn nuôi,…Khả năng mở rộng đối với công
+                                                    nghệ là khả thi và đã được thực nghiệm ở nhiều dung tích khác
+                                                    nhau
+                                                    trong phòng thí nghiệm. Đối với thiệt bị hiện có thì khả năng xử
+                                                    lý
+                                                    đạt 24m3/ ngày với mức tiêu thụ điện năng là 2kWh/m3 khi sử dụng
+                                                    điện cực thu hoạch là nhôm và inox. Thiết bị xử lý nước thải
+                                                    thủy
+                                                    sản cho nước sau xử lý đạt tiêu chuẩn loại A và đảm bảo xả trực
+                                                    tiếp
+                                                    ra môi trường.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-75">
+                                                <img src="/images/14/2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-target="#carousel-group-3-info-kiot-right" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-target="#carousel-group-3-info-kiot-right" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--======= MODAL INFO KIOT FORWARD RIGHT =======-->
+        <div class="modal" id="info-kiot-forward-right-modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold text-uppercase">
+                            VILOSHIP - ỨNG DỤNG GỌI SHIPPER GIAO HÀNG NHANH NỘI Ô
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel-group-3-info-kiot-forward-right" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Thông tin dự án
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                            <div class="modal-product-image">
+                                                <img src="/images/15/logo.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="modal-product-content">
+                                                <p>Họ và tên người đại diện: Nguyễn Giang Trung Nghĩa</p>
+                                                <p>Ngày sinh: 15/08/1991</p>
+                                                <p>Địa chỉ: 52/84/38G, Nguyễn Huệ, P2, TP Vĩnh Long</p>
+                                                <p>Thành viên 1: Nguyễn Giang Trung Nghĩa, Chức vụ trong nhóm:
+                                                    Trưởng
+                                                    nhóm</p>
+                                                <p>Thành viên 2: Đinh Thanh Nhân, Chức vụ trong nhóm: Thành viên</p>
+                                                <p>Đăng ký dự thi dự án khởi nghiệp: VILOSHIP - ỨNG DỤNG GỌI SHIPPER
+                                                    GIAO HÀNG NHANH NỘI Ô</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="carousel-item active">
+                                    <h3 class="modal-product-title">
+                                        Tóm tắt dự án
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-content">
+                                                <p>ViloShip được sáng lập bởi đội ngũ những người trẻ ở Vĩnh Long có
+                                                    đam
+                                                    mê và khát vọng cống hiến cho quê hương đất nước bằng trí tuệ và
+                                                    sức
+                                                    lao động của mình.</p>
+                                                <p>Chúng tôi mong muốn đem đến giải pháp giao nhận hàng hóa nhanh
+                                                    chóng,
+                                                    tiện lợi, đáng tin cậy cho người dân ở Đồng Bằng Sông Cửu Long
+                                                    nói
+                                                    riêng và đất nước Việt Nam nói chung.</p>
+                                                <p>SỨ MỆNH CỦA CHÚNG TÔI</p>
+                                                <p>Đối với khách hàng/người sử dụng dịch vụ, ViloShip sẽ trở thành
+                                                    ứng
+                                                    dụng đáng tin cậy phục vụ cho các nhu cầu liên quan đến giao
+                                                    nhận
+                                                    hàng hóa dựa trên 2 tiêu chí chính: tốc độ và độ tin cậy. Hàng
+                                                    hóa
+                                                    của bạn sẽ được giao nhận trong nội ô với tốc độ nhanh nhất có
+                                                    thể
+                                                    và ngày càng nhanh hơn. Bạn sẽ hoàn toàn yên tâm về việc đơn
+                                                    hàng
+                                                    được hoàn thành một cách trọn vẹn khi sử dụng dịch vụ của
+                                                    ViloShip.
+                                                </p>
+                                                <p>Đối với người lao động, và đội ngũ giao hàng (shipper), ViloShip
+                                                    mong
+                                                    muốn đem đến cơ hội việc làm có thu nhập bền vững, lâu dài dành
+                                                    cho
+                                                    mọi người. Chúng tôi sẽ xây dựng một tổ chức mà ở đó, mọi người
+                                                    có
+                                                    thể xem giao hàng như một nghề nghiệp ổn định như bao nghề khác
+                                                    hiện
+                                                    nay.</p>
+                                                <p>Đối với xã hội. ViloShip sẽ từng bước xây dựng hệ sinh thái các
+                                                    dịch
+                                                    vụ giao nhận, hậu cần, kho vận phục vụ cho hoạt động kinh tế của
+                                                    Đồng Bằng Sông Cửu Long. Góp phần thúc đẩy kinh tế vùng đồng
+                                                    bằng
+                                                    sông nước ngày càng phát triển.</p>
+                                                <p>Đối với đội ngũ nhà đầu tư, ViloShip luôn tư duy và đổi mới không
+                                                    ngừng nhằm đem đến cơ hội đầu tư mang lại lợi nhuận bền vững,
+                                                    lâu
+                                                    dài từ những hoạt động thực tế có đóng góp cho xã hội.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-75">
+                                                <img src="/images/15/1.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-75">
+                                                <img src="/images/15/2.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-75">
+                                                <img src="/images/15/3.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="modal-product-image w-75">
+                                                <img src="/images/15/4.jpg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-target="#carousel-group-3-info-kiot-forward-right" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-target="#carousel-group-3-info-kiot-forward-right" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/mobile-nav/mobile-nav.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

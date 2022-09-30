@@ -1,0 +1,119 @@
+.header-bottom {
+    background-color: rgb(253, 184, 20);
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.header-bottom.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header-bottom .navbar {
+    padding: 3px 0 !important;
+    background-color: rgb(253, 184, 20);
+}
+
+.header-bottom .navbar .nav-link {
+    display: inline-block;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.header-bottom .navbar .nav-link img {
+    width: 30px;
+    margin-top: 6px;
+    display: inline-block;
+    height: 30px;
+}
+
+.header-bottom .navbar .nav-link span {
+    display: block;
+    font-size: 11px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.header-bottom .nabar-right .nav-item:last-child {
+    border-left: #eaeaea 0.55px solid;
+    width: 80px;
+    text-align: center;
+    line-height: 3;
+}
+
+.header-bottom .nabar-center h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-bar {
+    position: relative;
+}
+
+.top-bar > iframe {
+    position: absolute;
+    top: 23%;
+    left: 27%;
+    width: 45%;
+    height: 36%;
+}
+
+.top-bar marquee {
+    position: absolute;
+    font-weight: 600;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fdb814;
+    width: 50%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-bar .sidebar {
+    width: 130px;
+    position: absolute;
+    left: calc(100% - 130px);
+    top: 15%;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.3),
+        rgba(255, 255, 255, 0.2)
+    );
+    padding: 5px 10px;
+}
+
+.top-bar .sidebar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.top-bar .sidebar-list .sidebar-item .sidebar-link {
+    color: #fff;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.top-bar .sidebar-list .sidebar-item .sidebar-link img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.top-bar .sidebar-list .sidebar-item .sidebar-link span {
+    display: inline-block;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .top-bar > img {
+        height: auto;
+    }
+}
