@@ -16,17 +16,6 @@
             left: 62.7%;
         }
 
-        .top-bar .icon-quit {
-            position: absolute;
-            width: 10%;
-            height: 6%;
-            top: 71%;
-            left: 77.5%;
-            background: transparent;
-            transform: unset;
-            border-radius: 5px;
-        }
-
         .top-bar .icon-home {
             position: absolute;
             width: 2%;
@@ -34,6 +23,11 @@
             top: 84%;
             left: 28%;
             background: transparent;
+        }
+
+        .top-bar .icon-quit {
+            left: 20%;
+            transform: unset;
         }
     </style>
 @endsection
@@ -85,15 +79,18 @@
             @endphp
             <div class="btn-open-box {{ $num }}">
                 <h5 class="kiot-name"><span>{{ $stall->name }}</span></h5>
-                <a href="{{ route('frontend.stall.show', [$stall, $stalls->currentPage()]) }}" class="btn-modal">
-                    <img src="{{ asset('frontend/images/hieu-ung-click_FINAL1.gif') }}" alt="" />
-                </a>
+                <a href="{{ route('frontend.stall.show', [$stall, $stalls->currentPage()]) }}" class="btn-modal"></a>
             </div>
+            <a href="{{ route('frontend.stall.show', [$stall, $stalls->currentPage()]) }}"
+                class="area-open {{ $num }} btn-modal">
+                <img src="{{ asset('frontend/images/hieu-ung-click_FINAL1.gif') }}" alt="" class="w-25" />
+            </a>
         @endforeach
 
-        <a href="{{ route('frontend.submit.show', $submit) }}" class="icon-seminor"></a>
-        <a href="{{ route('frontend.hall.show') }}" class="icon-quit"></a>
-        <a href="{{ route('frontend.home.show') }}" class="icon-home"></a>
+        <a href="{{ route('frontend.hall.show') }}" class="icon-quit" title="Lối ra">
+            <img src="{{ asset('frontend/img/img_previous.gif') }}" alt="" />
+            <span>Lối ra</span>
+        </a>
 
         {{-- <a href="{{ asset('frontend/img/standy-show.jpg') }}" class="standy-show" data-fancybox="standy-show">
             <img src="{{ asset('frontend/images/hieu-ung-click_FINAL1.gif') }}" alt="" />

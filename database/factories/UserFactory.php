@@ -20,6 +20,7 @@ class UserFactory extends Factory
             'username' => 'nqhuy',
             'email' => '',
             'password' => Hash::make("admin123!@#"),
+            'type' => 1,
         ];
     }
 }

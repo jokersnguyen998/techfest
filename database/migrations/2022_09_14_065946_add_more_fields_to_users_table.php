@@ -18,6 +18,7 @@ class AddMoreFieldsToUsersTable extends Migration
             $table->string('lastname')->after('name');
             $table->string('username')->after('lastname');
             $table->string('email')->nullable()->change();
+            $table->smallInteger('type')->default(0)->after('remember_token');
         });
     }
 

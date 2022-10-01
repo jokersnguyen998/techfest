@@ -19,10 +19,10 @@ class HomeController extends Controller
 
     public function showExhibitionPage()
     {
-        $stallSorted = Stall::orderBy('position', 'desc')->paginate(12);
+        $stallSorted = Stall::orderBy('position', 'desc')->paginate(10);
         $stallLists = [];
         for ($i = 1; $i <= $stallSorted->lastPage(); $i++) {
-            $paginations = Stall::orderBy('position', 'desc')->paginate(12, ['*'], 'page', $i);
+            $paginations = Stall::orderBy('position', 'desc')->paginate(10, ['*'], 'page', $i);
             $stallLists[$i] = $paginations->items();
         }
         $submits = Submit::active()->with('speakers')->get();
@@ -39,7 +39,7 @@ class HomeController extends Controller
     {
         $stallSorted = Stall::orderBy('position', 'desc')
             ->paginate(
-                $perPage = 12,
+                $perPage = 10,
                 $columns = ['*'],
                 $pageName = 'page',
                 $page = $currentPage
@@ -87,10 +87,10 @@ class HomeController extends Controller
     public function searchStall(Request $request)
     {
         $text = trim($request->text);
-        $stallSorted = Stall::orderBy('position', 'desc')->paginate(12);
+        $stallSorted = Stall::orderBy('position', 'desc')->paginate(10);
         $data = [];
         for ($i = 1; $i <= $stallSorted->lastPage(); $i++) {
-            $paginations = Stall::orderBy('position', 'desc')->paginate(12, ['*'], 'page', $i);
+            $paginations = Stall::orderBy('position', 'desc')->paginate(10, ['*'], 'page', $i);
             $paginations = $paginations->setCollection(
                 $paginations->getCollection()->filter(function ($stall) use ($text) {
                     return strlen(strstr(strtolower($stall->name),  strtolower($text)));

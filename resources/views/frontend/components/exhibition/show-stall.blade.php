@@ -1,5 +1,5 @@
-<div class="modal-dialog modal-xl">
-    <div class="modal-content" style="background-color: transparent;">
+<div class="modal-dialog modal-lg">
+    <div class="modal-content" style="background-color: transparent; border: none">
         <div class="control-slide-modal">
             <div class="previous-modal">
                 @if ($stallBefore)
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="kiot kiot-modal">
-            <!-- <span class="close" data-dismiss="modal">&times;</span> -->
+            <span class="close" data-dismiss="modal">&times;</span>
 
             <div class="kiot-name">{{ $stall->name }}</div>
 
@@ -54,9 +54,9 @@
                                     break;
                             }
                         @endphp
-                        <a href="{{ $image->file_path }}" data-fancybox="gallery"
-                            data-caption="Image {{ $loop->iteration }}"></a>
                         <div class="link-box-effect {{ $num }}">
+                            <a href="{{ $image->file_path }}" data-fancybox="gallery"
+                                data-caption="Image {{ $loop->iteration }}"></a>
                             <img src="{{ $image->file_path }}" alt="Stall Detail">
                             <a href="{{ $class ? route('frontend.stall.detail', $stall) : $image->link }}"
                                 target="_blank" class="link-icon-effect {{ $class }}">
@@ -68,9 +68,8 @@
 
                 <div class="link-box-effect logo">
                     <img src="{{ $stall->logo }}" alt="Logo">
-                    <a href="{{ $stall->logo }}" class="link-icon-effect" data-fancybox="gallery" data-caption="Logo">
-                        <img src="{{ asset('frontend/images/hieu-ung-click_FINAL1.gif') }}" alt="" />
-                    </a>
+                    <a href="{{ $stall->logo }}" class="link-icon-effect" data-fancybox="gallery"
+                        data-caption="Logo"></a>
                 </div>
 
                 <div class="link-box-effect contact">
