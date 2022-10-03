@@ -27,8 +27,9 @@
                 <p class="m-0"><i class="fa fa-phone"></i> Hotline <strong>0292 3 83 66
                         77</strong></p>
                 <div class="d-flex my-3">
-                    <button class="btn btn-success py-1 px-4 mx-1" style="border-radius: 15px;">THAM QUAN</button>
-                    <button class="btn btn-warning py-1 px-4 mx-1" style="border-radius: 15px;">CHI TIẾT</button>
+                    <a href="{{ route('frontend.hall.show') }}" class="btn btn-success py-1 px-4 mx-1"
+                        style="border-radius: 15px;">THAM QUAN</a>
+                    <a href="#" class="btn btn-warning py-1 px-4 mx-1" style="border-radius: 15px;">CHI TIẾT</a>
                 </div>
             </div>
             <div class="col-lg-6">
