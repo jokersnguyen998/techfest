@@ -608,192 +608,17 @@ h6 {
 
 /* Submit Section
 --------------------------------*/
-.submit img {
-    width: 60%;
-}
-
-.submit ._container {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #fff;
-    overflow: hidden;
-}
-
-.submit .celender {
-    color: white;
-}
-
-.submit:nth-child(odd) ._container::before {
-    content: "";
-    position: absolute;
-    width: 2000px;
-    height: 2000px;
-    border-radius: 50%;
-    background: linear-gradient(-45deg, #4481eb, #04befe);
-    top: -10%;
-    right: 48%;
-    transform: translateY(-50%);
-}
-
-.submit:nth-child(even) ._container::before {
-    content: "";
-    position: absolute;
-    width: 2000px;
-    height: 2000px;
-    border-radius: 50%;
-    background: linear-gradient(-45deg, #4481eb, #04befe);
-    top: -10%;
-    left: 48%;
-    transform: translateY(-50%);
-}
-
-.submit:nth-child(odd) ._container .content_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.submit:nth-child(even) ._container .content_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.submit:nth-child(odd) ._container .content_container .content-box {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 1% 0 5%;
-    font-size: 1.2rem;
-}
-
-.submit:nth-child(even) ._container .content_container .content-box {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(0, -50%);
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 1% 0 5%;
-    font-size: 1.2rem;
-}
-
-.submit:nth-child(odd) ._container .panels_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    z-index: 2;
-}
-
-.submit:nth-child(even) ._container .panels_container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.submit:nth-child(odd) ._container .panels_container .panel {
+#submit .title {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.submit:nth-child(even) ._container .panels_container .panel {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.submit ._container .panels_container .panel {
-    padding: 1rem 5% 1rem 5%;
-}
-
-.submit ._container .panels_container .panel .content {
-    color: #fff;
-}
-
-.submit ._container .panels_container .panel h3 {
-    font-weight: 600;
-    line-height: 1.3;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.submit ._container .panels_container .panel p {
-    font-size: 1rem;
-    padding: 0.2rem 0;
-    margin: 0;
-}
-
-.submit .btn-outline-primary {
-    border: 1px solid #fff;
-    color: #fff;
-}
-
-.submit .slide {
-    width: 55%;
-}
-
-.submit .slide .member {
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.submit .slide .member .member-info {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: 0.2s;
-    padding: 15px 0;
-    background: rgba(29, 28, 41, 0.6);
 }
 
-.submit .slide .member .member-info-content {
-    transition: margin 0.2s;
-    height: 40px;
-    transition: height 0.4s;
-}
-
-.submit .slide .member:hover .member-info-content {
-    height: 80px;
+#submit .title span {
+    display: inline-block;
+    height: 3px;
+    width: 12%;
+    background: #28a745;
+    margin-right: 12px;
 }
 
 /* Backdrop Section
@@ -921,7 +746,7 @@ h6 {
 #call-to-action {
     background: #2d2b46;
     background-size: cover;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
 }
 
 #call-to-action .cta-title {

@@ -10,15 +10,7 @@
                     @if (env('OPENING'))
                         <li><a href="{{ route('frontend.hall.show') }}">Triển lãm</a></li>
                     @endif
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown">Hội thảo</a>
-                        <div class="dropdown-menu">
-                            @foreach ($submits as $submit)
-                                <a class="dropdown-item"
-                                    href="#submit-{{ $loop->iteration }}">{{ Str::words($submit->name, 10, '...') }}</a>
-                            @endforeach
-                        </div>
-                    </li>
+                    <li><a href="{{ route('frontend.submit.show') }}">Hội thảo</a></li>
                     {{-- <li><a href="#testimonials">Tham luận</a></li> --}}
                     <li><a href="#call-to-action">Liên hệ</a></li>
                     <li><a href="https://drive.google.com/drive/folders/1LBHEIR0OpF4guy41oF7YpmoGFZDOdklJ"

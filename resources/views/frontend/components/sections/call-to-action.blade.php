@@ -1,19 +1,49 @@
-<section id="call-to-action" class="wow fadeInUp">
+<section id="call-to-action" class="wow fadeInUp" style="background-color: #037e4e;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 text-center text-lg-left">
+            <div class="col-lg-12 text-center">
                 <h3 class="cta-title m-0">
-                    Liên hệ tham gia sự kiện<br />
+                    DIỄN ĐÀN KHỞI NGHIỆP ĐỔI MỚI SÁNG TẠO <br>
+                    VÙNG ĐỒNG BẰNG SÔNG CỬU LONG - LẦN 2
                 </h3>
-                <h4 class="text-light my-2">
-                    Trung tâm Thông tin Khoa học và Công nghệ Cần Thơ
-                </h4>
-                <p class="cta-text">
-                    Địa chỉ: 118/3, Trần Phú, P. Cái Khế, Q. Ninh Kiều, TP. Cần Thơ<br />
-                    Điện thoai: 0909 767 920 (Mr. Điền)<br />
-                    Website: http://www.casti.vn<br />
-                </p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4">
+                <div class="px-2 py-1 bg-white text-success text-center" style="border-radius: 30px; font-weight: 800;">
+                    Sự kiện bắt đầu ngày 19 - 20.10.2022
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center text-white">
+                    <a href="#" class="icon-box d-flex justify-content-center align-items-center bg-primary mx-1"
+                        style="width: 40px; height: 40px; border-radius: 5px;">
+                        <i class="fa fa-facebook text-white"></i>
+                    </a>
+                    <a href="#" class="icon-box d-flex justify-content-center align-items-center bg-danger mx-1"
+                        style="width: 40px; height: 40px; border-radius: 5px;">
+                        <i class="fa fa-youtube-play text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column text-white">
+                    <div class="text-center my-2"><span style="font-weight: 600;"><i class="fa fa-phone"></i> Hotline:
+                        </span>02923 3 83 66 77</div>
+                    <button class="btn btn-outline-primary mx-auto text-white px-5" style="border-color: #fff;">ĐĂNG KÝ
+                        NGAY</button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center text-white">
+                    <i class="fa fa-globe"></i> www.techfestmekong.com.vn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center text-white py-2 mt-3" style="background-color: #005232">
+        © Copyright 2022 Trung tâm Thông tin Khoa học và Công nghệ - Sở khoa học và Công nghệ TP. Cần Thơ
     </div>
 </section>

@@ -7,8 +7,18 @@
             top: 50%;
         }
 
-        .top-bar>img {
+        .top-bar {
             height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-bar>img {
+            display: block;
+            object-fit: cover;
+            padding-top: 10rem;
         }
 
         @media (max-width: 1023px) {
@@ -44,6 +54,6 @@
 
 @section('content')
     <section class="top-bar" id="tutorial">
-        <img src="{{ asset('frontend/img/backdrop.png') }}" alt="Backdrop" />
+        <img src="{{ asset('frontend/img/bg.jpg') }}" alt="Backdrop" />
     </section>
 @endsection

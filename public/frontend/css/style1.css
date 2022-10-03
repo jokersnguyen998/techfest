@@ -116,24 +116,24 @@
 }
 
 .top-bar .area-open.three {
-    width: 10%;
+    width: 8%;
     height: 8%;
     top: 54%;
     left: 64%;
 }
 
 .top-bar .area-open.four {
-    width: 10%;
-    height: 8%;
-    top: 54%;
-    left: 77.5%;
-}
-
-.top-bar .area-open.five {
     width: 9%;
     height: 8%;
     top: 54%;
-    left: 91.5%;
+    left: 76%;
+}
+
+.top-bar .area-open.five {
+    width: 8%;
+    height: 8%;
+    top: 54%;
+    left: 89%;
 }
 
 .top-bar .area-open.six {
@@ -180,7 +180,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(243, 226, 22);
 }
 
 .top-bar .btn-open-box .kiot-name {
@@ -190,8 +190,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: blue;
-    background: rgba(0, 0, 0, 0.8);
+    color: rgb(53, 248, 35);
+    background: #0020ffcc;
     font-size: 0.9rem;
     text-align: center;
     font-weight: 600;
@@ -223,9 +223,9 @@
 }
 
 .top-bar .btn-open-box.one {
-    left: 35.3%;
+    left: 35.4%;
     top: 46%;
-    width: 11.3%;
+    width: 10.7%;
 }
 
 .top-bar .btn-open-box.two {
@@ -235,21 +235,21 @@
 }
 
 .top-bar .btn-open-box.three {
-    left: 64.4%;
+    left: 63%;
     top: 46%;
-    width: 11%;
+    width: 10.6%;
 }
 
 .top-bar .btn-open-box.four {
-    left: 79%;
+    left: 76.7%;
     top: 46%;
-    width: 11%;
+    width: 10.5%;
 }
 
 .top-bar .btn-open-box.five {
-    left: 94%;
+    left: 90.3%;
     top: 46%;
-    width: 11%;
+    width: 9.3%;
 }
 
 .top-bar .btn-open-box.six {

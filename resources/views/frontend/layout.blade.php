@@ -41,7 +41,7 @@
 
     @include('frontend.components.fixed-content')
 
-    @include('frontend.components.google-map')
+    {{-- @include('frontend.components.google-map') --}}
 
     @include('frontend.components.back-to-top')
 
