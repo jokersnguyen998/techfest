@@ -60,6 +60,11 @@ $(document).on("click", ".btn-detail", function (e) {
 $("#modal-detail").on("show.bs.modal", function (e) {
     let height = $("#modal").find(".modal-content").height();
     $(this).find(".modal-content").height(height);
+    $("#modal").find(".control-slide-modal").css("display", "none");
+});
+
+$("#modal-detail").on("hide.bs.modal", function (e) {
+    $("#modal").find(".control-slide-modal").css("display", "flex");
 });
 
 $(".sidebar-control a").click(function (e) {

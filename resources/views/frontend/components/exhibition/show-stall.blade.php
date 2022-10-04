@@ -1,4 +1,4 @@
-<div class="modal-dialog modal-lg">
+<div class="modal-dialog modal-xl">
     <div class="modal-content" style="background-color: transparent; border: none">
         <div class="control-slide-modal">
             <div class="previous-modal">

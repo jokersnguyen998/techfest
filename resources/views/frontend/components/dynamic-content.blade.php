@@ -13,12 +13,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .top-bar>img {
-            display: block;
-            object-fit: cover;
-            padding-top: 10rem;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-image: url({{ asset('frontend/img/bg.jpg') }});
         }
 
         @media (max-width: 1023px) {
@@ -54,6 +52,13 @@
 
 @section('content')
     <section class="top-bar" id="tutorial">
-        <img src="{{ asset('frontend/img/bg.jpg') }}" alt="Backdrop" />
+        {{-- <img src="{{ asset('frontend/img/bg.jpg') }}" alt="Backdrop" /> --}}
+        <a href="https://logwork.com/countdown-wddy" class="countdown-timer" data-style="flip3" data-timezone="Asia/Ho_Chi_Minh"
+            data-language="vi" data-textcolor="#FFA500" data-date="2022-10-19 00:00" data-background="#FFA500"
+            data-digitscolor="#FFFFFF" data-unitscolor="#FFA500">Techfest 2022</a>
     </section>
+@endsection
+
+@section('js')
+    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
 @endsection

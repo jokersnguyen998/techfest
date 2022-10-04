@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Chợ công nghệ, thiết bị chuyên ngành nông nghiệp và công nghệ sau thu hoạch - TECHMART NÔNG NGHIỆP 2022
+    <title>
+        Ngày hội khởi nghiệp đổi mới sáng tạo vùng đồng bằng Sông Cửu Long năm 2022 - Techfest Mekong 2022
     </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
