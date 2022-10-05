@@ -13,7 +13,7 @@
                     <li><a href="{{ route('frontend.submit.show') }}">Hội thảo</a></li>
                     {{-- <li><a href="#testimonials">Tham luận</a></li> --}}
                     <li><a href="#call-to-action">Liên hệ</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1LBHEIR0OpF4guy41oF7YpmoGFZDOdklJ"
+                    <li><a href="https://docs.google.com/forms/d/1owoMajk9vbcSs7WXsGtzHNyDC48QHgbtIqFo0TMdBcs/viewform?edit_requested=true"
                             target="_blank">Đăng ký</a>
                     </li>
                 </ul>

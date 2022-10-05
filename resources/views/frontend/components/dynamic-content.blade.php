@@ -55,10 +55,15 @@
         {{-- <img src="{{ asset('frontend/img/bg.jpg') }}" alt="Backdrop" /> --}}
         <a href="https://logwork.com/countdown-wddy" class="countdown-timer" data-style="flip3" data-timezone="Asia/Ho_Chi_Minh"
             data-language="vi" data-textcolor="#FFA500" data-date="2022-10-19 00:00" data-background="#FFA500"
-            data-digitscolor="#FFFFFF" data-unitscolor="#FFA500">Techfest 2022</a>
+            data-digitscolor="#FFFFFF" data-unitscolor="#FFA500">&nbsp;</a>
     </section>
 @endsection
 
 @section('js')
     <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+    <script>
+        $('.countdown-timer').click(function(e) {
+            e.preventDefault();
+        });
+    </script>
 @endsection

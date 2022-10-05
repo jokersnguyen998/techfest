@@ -32,13 +32,19 @@
                 <div class="d-flex flex-column text-white">
                     <div class="text-center my-2"><span style="font-weight: 600;"><i class="fa fa-phone"></i> Hotline:
                         </span>02923 3 83 66 77</div>
-                    <button class="btn btn-outline-primary mx-auto text-white px-5" style="border-color: #fff;">ĐĂNG KÝ
-                        NGAY</button>
+                    <a href="https://docs.google.com/forms/d/1owoMajk9vbcSs7WXsGtzHNyDC48QHgbtIqFo0TMdBcs/viewform?edit_requested=true"
+                        class="btn btn-outline-primary mx-auto text-white px-5" style="border-color: #fff;"
+                        target="_blank">
+                        ĐĂNG KÝ NGAY
+                    </a>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="text-center text-white">
-                    <i class="fa fa-globe"></i> www.techfestmekong.com.vn
+                <div class="text-center">
+                    <a href="https://www.techfestmekong.vn" class="text-white">
+                        <i class="fa fa-globe"></i>
+                        www.techfestmekong.vn
+                    </a>
                 </div>
             </div>
         </div>
