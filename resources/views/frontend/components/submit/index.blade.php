@@ -177,15 +177,10 @@
         <div class="sidebar">
             <ul class="sidebar-list">
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="https://docs.google.com/forms/d/1owoMajk9vbcSs7WXsGtzHNyDC48QHgbtIqFo0TMdBcs/viewform?edit_requested=true" target="_blank">
+                    <a class="sidebar-link" target="_blank"
+                    href="https://docs.google.com/forms/d/1owoMajk9vbcSs7WXsGtzHNyDC48QHgbtIqFo0TMdBcs/viewform?edit_requested=true">
                         <img src="{{ asset('frontend/img/icon-chon-su-kien.png') }}" alt="" />
                         <span>ĐĂNG KÝ THAM DỰ</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="#" onclick="showModal(event)">
-                        <img src="{{ asset('frontend/img/icon-ve-dien-gia.png') }}" alt="" />
-                        <span>VỀ DIỄN GIẢ</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -197,9 +192,6 @@
             </ul>
         </div>
     </section>
-    @include('frontend.components.submit.speakers', [
-        'submit' => $submit,
-    ])
     @include('frontend.components.submit.preview-pdf')
 @endsection
 
