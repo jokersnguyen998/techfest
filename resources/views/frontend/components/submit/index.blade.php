@@ -169,7 +169,7 @@
 
         {{-- <iframe src="https://www.youtube.com/embed/Zuy4KRmxtJM" frameborder="0" allowfullscreen></iframe> --}}
 
-        <a href="{{ route('frontend.hall.show') }}" class="icon-quit" title="Lối ra">
+        <a href="{{ route('frontend.home.show') }}" class="icon-quit" title="Lối ra">
             <img src="{{ asset('frontend/img/img_previous.gif') }}" alt="" />
             <span>Lối ra</span>
         </a>
