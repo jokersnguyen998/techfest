@@ -62,6 +62,11 @@
             // disable right click
             document.addEventListener('contextmenu', event => event.preventDefault());
 
+            // disable right click iframe
+            window.frames["ifr-youtube"].contentDocument.oncontextmenu = function(){
+                return false;
+            };
+
             document.onkeydown = function(e) {
 
                 // disable F12 key

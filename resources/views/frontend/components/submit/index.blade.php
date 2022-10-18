@@ -167,7 +167,7 @@
 
         <img src="{{ asset('frontend/img/hopmaxt banner-04.png') }}" alt="Backdrop" />
 
-        <iframe src="" frameborder="0" allowfullscreen></iframe>
+        <iframe id="ifr-youtube" src="" frameborder="0" allowfullscreen></iframe>
 
         <a href="{{ route('frontend.home.show') }}" class="icon-quit" title="Lối ra">
             <img src="{{ asset('frontend/img/img_previous.gif') }}" alt="" />
