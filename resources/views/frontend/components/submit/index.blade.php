@@ -158,16 +158,16 @@
 
             .top-bar>iframe {
                 position: absolute;
-                top: 10%;
-                left: 26%;
-                width: 44%;
-                height: 46%;
+                top: 28%;
+                left: 31%;
+                width: 35%;
+                height: 31%;
             }
         </style>
 
         <img src="{{ asset('frontend/img/hopmaxt banner-04.png') }}" alt="Backdrop" />
 
-        {{-- <iframe src="https://www.youtube.com/embed/Zuy4KRmxtJM" frameborder="0" allowfullscreen></iframe> --}}
+        <iframe src="" frameborder="0" allowfullscreen></iframe>
 
         <a href="{{ route('frontend.home.show') }}" class="icon-quit" title="Lối ra">
             <img src="{{ asset('frontend/img/img_previous.gif') }}" alt="" />
